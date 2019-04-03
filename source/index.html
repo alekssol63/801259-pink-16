@@ -5,8 +5,62 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="header">
+      <div class="header__logo">
+        <a class="header__logo-link">
+          <img class="header__logo-image" src="img/logotype-mobile.svg" width="75" height="25" alt="Pink">
+        </a>
+        <button class="header__menu-toggle" type="button">Открыть меню</button>
+      </div>
+      <nav  class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="header__content">
+        <h2 class="visually-hidden">Приложение</h2>
+        <button type="button" class="header-content__button">Скачать приложение</button>
+        <div class="header__list-wrapper">
+          <ul class="header__list os-list">
+            <li class="os-list__item"><img class="os-list__image" src="img/apple-logo.svg" width="60" height="60" alt="Apple"></li>
+            <li class="os-list__item"><img class="os-list__image" src="img/android-logo.svg" width="60" height="60" alt="Android"></li>
+            <li class="os-list__item"><img class="os-list__image" src="img/microsoft-logo.svg" width="60" height="60" alt="Windows"></li>
+          </ul>
+          <p class="header__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows8
+          </p>
+        </div>
+      </section>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">«Pink»</h1>
+      <section class="information">
+        <h2  class="visually-hidden">Информация о возможностях</h2>
+        <div class="information__intro">
+          <p class="information__intro-phrase">Устали от серости мегаполиса?</p>
+          <p class="information__intro-phrase">Нам есть, что вам  предложить!</p>
+        </div>
+        <ul class="information__list opportunities">
+          <li class="opportunities__item">
+            <h3 class="opportunities__header">Поднимает настроение</h3>
+            <p class="opportunities__text">Приложение позволит вам победить осеннюю хандру и депресссию буквально в несколько кликов!</p>
+          </li>
+          <li class="opportunities__item">
+            <h3 class="opportunities__header">Меняет мир вокруг</h3>
+            <p class="opportunities__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="opportunities__item">
+            <h3 class="opportunities__header">Заводит новых друзей</h3>
+            <p class="opportunities__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img class="information__image" src="img//iphone-screen-mobile.png" width="157" height="320" alt="iPhone-screen">
+      </section>
+    </main>
   </body>
 </html>
