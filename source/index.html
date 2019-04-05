@@ -24,7 +24,7 @@
       </nav>
       <section class="header__content">
         <h2 class="visually-hidden">Приложение</h2>
-        <button type="button" class="header-content__button">Скачать приложение</button>
+        <button class="button button--download" type="button">Скачать приложение</button>
         <div class="header__list-wrapper">
           <ul class="header__list os-list">
             <li class="os-list__item"><img class="os-list__image" src="img/apple-logo.svg" width="60" height="60" alt="Apple"></li>
@@ -61,6 +61,71 @@
         </ul>
         <img class="information__image" src="img//iphone-screen-mobile.png" width="157" height="320" alt="iPhone-screen">
       </section>
+      <section class="reviews slider">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__list">
+          <blockquote class="reviews__item  slider__item">
+            <cite class="reviews__author">Николай Петров</cite>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+          </blockquote>
+        </div>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </section>
+      <section class="price slider">
+        <h2 class="visually-hidden">Цены</h2>
+        <table class="price__table slider__item">
+          <tr>
+            <th>
+              <h3 class="price__caption">Стандарт</h3>
+              <b class="price__bold">3,99 USD</b>
+            </th>
+          </tr>
+          <tr>
+            <td class="price__field">Розовый фильтр</td>
+            <td class="price__value"></td>
+          </tr>
+          <tr>
+            <td class="price__caption">Смайлики</td>
+            <td class="price__value"></td>
+          </tr>
+          <tr>
+            <td class="price__caption">Комментарии</td>
+            <td class="price__value"></td>
+          </tr>
+        </table>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer__intro">
+        <p class="footer__intro-phrase">Остались вопросы?</p>
+        <p class="footer__intro-phrase">Свяжитесь с нами!</p>
+      </div>
+      <div class="footer__contacts-wrapper">
+        <div class="footer__contacts-item">
+          <b class="footer__caption">Звоните:</b>
+          <p class="footer__text">+7 (812) 555-66-66</p>
+        </div>
+        <div class="footer__contacts-item">
+          <b class="footer__caption">Пишите:</b>
+          <p class="footer__text">mail@htmlacademy.ru</p>
+        </div>
+        <div class="footer__contacts-item">
+          <b class="footer__caption">Приезжайте в гости:</b>
+          <p class="footer__text">ул. Большая Конюшенная, 19/8 </p>
+        </div>
+      </div>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8a8feb3e3ea85b4853c66eb741194554513123114edbbd2145a8233ef4e3c07b&amp;source=constructor" height="416"></iframe>
+    </footer>
   </body>
 </html>
