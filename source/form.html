@@ -26,6 +26,74 @@
     </header>
     <main class="main">
       <h1 class="visually-hidden">«Конкурс»</h1>
+      <p class="contest-description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="contest__mobile-hidden">Пожалуйста, заполните форму ниже:<span> </p>
+      <form class="data-form" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="data-form__input-block user-data">
+          <label class="user-data__label">Фамилия:</label>
+          <input class="user-data__input" type="text" name="surname" value=""  placeholder="Укажите фамилию *">
+          <label class="user-data__label">Имя:</label>
+          <input class="user-data__input" type="text" name="name" value=""  placeholder="Введите ваше имя *">
+          <label class="user-data__label">Отчество:</label>
+          <input class="user-data__input" type="text" name="patronymic" value=""  placeholder="Ну и отчество тоже *">
+        </fieldset>
+        <fieldset class="data-form__input-block attainment">
+          <legend class="attainment__title">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="attainment__list">
+            <li class="attainment__item">
+              <input class="attainment__input visually-hidden" type="checkbox" name="input-checkbox" id="attainment1" checked>
+              <label class="attainment__label" for="attainment1">Сделал селфи с акулой</label>
+            </li>
+            <li class="attainment__item">
+              <input class="attainment__input visually-hidden" type="checkbox" name="input-checkbox" id="attainment2" checked>
+              <label class="attainment__label" for="attainment2">Обгорел на пляже</label>
+            </li>
+            <li class="attainment__item">
+              <input class="attainment__input visually-hidden" type="checkbox" name="input-checkbox" id="attainment3">
+              <label class="attainment__label" for="attainment3">Видел Чака Норриса</label>
+            </li>
+            <li class="attainment__item">
+              <input class="attainment__input visually-hidden" type="checkbox" name="input-checkbox" id="attainment4">
+              <label class="attainment__label" for="attainment4">Накупил сувениров</label>
+            </li>
+            <li class="attainment__item">
+              <input class="attainment__input visually-hidden" type="checkbox" name="input-checkbox" id="attainment5" checked>
+              <label class="attainment__label" for="attainment5">Удержал башню</label>
+            </li>
+            <li class="attainment__item">
+              <input class="attainment__input visually-hidden" type="checkbox" name="input-checkbox" id="attainment6">
+              <label class="attainment__label" for="attainment6">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="data-form__input-block user-contacts">
+          <label class="user-contacts__label" for="phone">Номер телефона
+          <input class="user-contacts__input" type="text" name="phone" value=""  placeholder="Номер, пожалуйста"></label>
+          <label class="user-contacts__label" for="mail">Адрес почты
+          <input class="user-contacts__input" type="text" name="mail" value=""  placeholder="Введите почту *"></label>
+        </fieldset>
+        <fieldset class="data-form__input-block application">
+          <legend class="application__title">С каким приложением путешествовали?</legend>
+          <ul class="application__list">
+            <li class="application__item">
+              <input type="radio" class="application-content__radio-input visually-hidden" name="radio-application" id="ios" checked>
+              <label class="application-content__radio" for="ios">Pink для iOS</label>
+            </li>
+            <li class="application__item">
+              <input type="radio" class="application-content__radio-input visually-hidden" name="radio-application" id="android">
+              <label class="application__radio" for="android">Pink на Android</label>
+            </li>
+            <li class="application__item">
+              <input type="radio" class="application-content__radio-input visually-hidden" name="radio-application" id="windows">
+              <label class="application__radio" for="windows">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="data-form__input-block emotions">
+          <legend class="emotions__title">Опишите свои эмоции</legend>
+            <textarea class="emotions__content"name="letter" rows="15" placeholder="Можно прям в красках, не стесняясь в выражениях" class="message-form-textarea"></textarea>
+        </fieldset>
+        <input class="form-button" type="submit" value="Отправить форму" name="send">
+      </form>
     </main>
     <footer class="footer">
       <div class="footer__logo">
