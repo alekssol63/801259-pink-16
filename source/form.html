@@ -28,7 +28,7 @@
       <h1 class="visually-hidden">«Конкурс»</h1>
       <p class="main__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="contest__mobile-hidden">Пожалуйста, заполните форму ниже:<span> </p>
       <form class="form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__input-block">
+        <fieldset class="form__input-block form__input-block--user-data">
           <label class="form__label">Фамилия:</label>
           <input class="form__input" type="text" name="surname" value=""  placeholder="Укажите фамилию *">
           <label class="form__label">Имя:</label>
@@ -36,7 +36,7 @@
           <label class="form__label">Отчество:</label>
           <input class="form__input" type="text" name="patronymic" value=""  placeholder="Ну и отчество тоже *">
         </fieldset>
-        <fieldset class="form__input-block">
+        <fieldset class="form__input-block form__input-block--attainment">
           <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
           <p>
             <input class="form__input visually-hidden" type="checkbox" name="input-checkbox" id="attainment1" checked>
@@ -63,13 +63,13 @@
             <label class="form__label" for="attainment6">Разгромил отель</label>
           </p>
         </fieldset>
-        <fieldset class="form__input-block">
+        <fieldset class="form__input-block form__input-block--user-contacts">
           <label class="form__label" for="phone">Номер телефона
           <input class="form__input" type="text" name="phone" value=""  placeholder="Номер, пожалуйста"></label>
           <label class="form__label" for="mail">Адрес почты
           <input class="form__input" type="text" name="mail" value=""  placeholder="Введите почту *"></label>
         </fieldset>
-        <fieldset class="data-form__input-block">
+        <fieldset class="data-form__input-block form__input-block--application">
           <legend class="form__title">С каким приложением путешествовали?</legend>
             <p>
               <input type="radio" class="form__input visually-hidden" name="radio-application" id="ios" checked>
@@ -85,7 +85,7 @@
             </p>
           </ul>
         </fieldset>
-        <fieldset class="data-form__input-block">
+        <fieldset class="data-form__input-block data-form__input-block--emotions">
           <legend class="form__title">Опишите свои эмоции</legend>
             <textarea class="form__message" name="letter" rows="15" placeholder="Можно прям в красках, не стесняясь в выражениях" class="message-form-textarea"></textarea>
         </fieldset>
