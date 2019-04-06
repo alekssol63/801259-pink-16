@@ -3,23 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="header__logo">
         <a class="header__logo-link">
-          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
+          <img class="header__logo-image" src="img/logotype-mobile.svg" width="75" height="25" alt="Pink">
         </a>
-        <button class="header__menu-toggle" type="button"></button>
+        <button class="header__menu-toggle" type="button">Открыть меню</button>
       </div>
       <nav  class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="#">HTML Academy</a></li>
+            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a href="#">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -117,35 +116,25 @@
         <p class="share__intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <img class="share__image" src="img/photo-road-mobile@1x.jpg" width="280" height="375" alt="user-photowork">
         <form  class="share__form" action="https://echo.htmlacademy.ru" method="get">
-          <ul class="share__filters">
-            <li class="share__filters-item">
-              <button class="share__filter-button share__filter-button--crop" type="button" name="button"></button>
-              <div class="share__range-filter">
-                <div class="share__range-control">
-                  <div class="share__scale"></div>
-                  <div class="share__toggle"></div>
-                </div>
+          <div class="share__filters-wrapper">
+            <ul class="share__filters">
+              <li class="share__filters-item">
+                <button class="share__filter-button share__filter-button--crop" type="button" name="button"></button>
+              </li>
+              <li class="share__filters-item">
+                <button class="share__filter-button share__filter-button--fill" type="button" name="button"></button>
+              </li>
+              <li class="share__filters-item">
+                <button class="share__filter-button share__filter-button--contrast" type="button" name="button"></button>
+              </li>
+            </ul>
+            <div class="share__range-filter">
+              <div class="share__range-control">
+                <div class="share__scale"></div>
+                <div class="share__toggle"></div>
               </div>
-            </li>
-            <li class="share__filters-item">
-              <button class="share__filter-button share__filter-button--fill" type="button" name="button"></button>
-              <div class="share__range-filter">
-                <div class="share__range-control">
-                  <div class="share__scale"></div>
-                  <div class="share__toggle"></div>
-                </div>
-              </div>
-            </li>
-            <li class="share__filters-item">
-              <button class="share__filter-button share__filter-button--contrast" type="button" name="button"></button>
-              <div class="share__range-filter">
-                <div class="share__range-control">
-                  <div class="share__scale"></div>
-                  <div class="share__toggle"></div>
-                </div>
-              </div>
-            </li>
-          </ul>
+            </div>
+          </div>
             <button class="button button--active" type="button">Запостить</button>
             <button class="button button--disable" type="button">Отмена</button>
         </form>
