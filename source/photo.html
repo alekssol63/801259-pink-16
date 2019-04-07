@@ -111,6 +111,32 @@
             </div>
         </div>
       </section>
+      <section class="share">
+        <h2 class="visually-hidden">Загрузка фотографии</h2>
+        <p class="share__intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <img class="share__image" src="img/photo-road-mobile@1x.jpg" width="280" height="375" alt="user-photowork">
+        <form  class="share__form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="share__filters-wrapper">
+            <ul class="share__filters">
+              <li class="share__filters-item">
+                <button class="share__filter-button share__filter-button--crop" type="button" name="button"></button>
+              </li>
+              <li class="share__filters-item">
+                <button class="share__filter-button share__filter-button--fill" type="button" name="button"></button>
+              </li>
+              <li class="share__filters-item">
+                <button class="share__filter-button share__filter-button--contrast" type="button" name="button"></button>
+              </li>
+            </ul>
+            <div>
+              <input type="range" id="effect" name="rangre-effect"
+                min="0" max="100">
+              <label for="effect"></label>
+            </div>
+            <button class="button button--active" type="button">Запостить</button>
+            <button class="button button--disable" type="button">Отмена</button>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__logo">
