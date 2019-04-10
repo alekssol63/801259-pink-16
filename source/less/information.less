@@ -1,6 +1,73 @@
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.information__intro {
+  width: 100%;
+  text-align: center;
+}
+
+.information__list {
+  list-style: none;
+  padding: 0;
+}
+
 .information__intro-phrase {
   font-size: 24px;
   line-height: 1;
   font-weight: 300;
   color: #283645;
+}
+
+.information__diagram {
+  display: none;
+}
+
+.information__effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .information__list {
+    width: 310px;
+    order: 1;
+  }
+
+  .information__opportunities {
+    display: flex;
+  }
+
+  .information__diagram {
+    display: block;
+    width: 300px;
+  }
+
+  .information__effect {
+    display: block;
+    width: 310px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .information__list {
+    width: 310px;
+    order: 1;
+  }
+
+  .information__opportunities {
+    width: 940px;
+    display: flex;
+  }
+
+  .information__diagram {
+    display: block;
+    width: 300px;
+  }
+
+  .information__effect {
+    display: block;
+    width: 570px;
+  }
 }

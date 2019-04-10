@@ -1,5 +1,18 @@
 .header {
   background-color: #1d2631;
+  height: 735px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__list.os-list {
+  display: flex;
 }
 
 .header__menu-toggle {
@@ -20,8 +33,28 @@
 
 .header__text {
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   font-weight: 300;
   color: #ffffff;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    height: 780px;
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .header__content {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    height: 853px;
+    width: 940px;
+    padding: 0 10px;
+  }
 }
