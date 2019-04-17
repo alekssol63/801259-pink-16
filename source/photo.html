@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
+    <!--<header class="header">
       <div class="header__logo">
         <a class="header__logo-link">
           <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
@@ -25,8 +25,31 @@
         </div>
       </nav>
       <h2 class="header__intro">Фотографии пользователей</h2>
+    </header>-->
+    <header class="header">
+      <nav  class="main-nav">
+        <div class="header__logo">
+          <a class="header__logo-link">
+            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
+          </a>
+          <button class="header__menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="header__content">
+        <div class="header__content-wrapper">
+          <h2 class="header__content-title">Фотографии пользователей</h2>
+        </div>
+      </section>
     </header>
-    <main class="main main--photo">
+    <main class="main">
       <h1 class="visually-hidden">«Фотографии»</h1>
       <section class="gallery">
         <p class="gallery__intro">
@@ -34,7 +57,12 @@
           Видите, как не хватает ваших?
         </p>
         <div class="gallery__item gallery__item--panorama">
-          <img class="gallery__image gallery__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="user-panorama">
+          <!--<img class="gallery__image gallery__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="user-panorama">-->
+          <picture class="gallery__picture">
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="gallery__image gallery__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="user-panorama">
+          </picture>
           <div class="gallery__description gallery__description--panorama">
             <b class="gallery__username">Анна</b>
             <span class="gallery__time-mark">(5 минут назад)</span>
@@ -46,7 +74,14 @@
         </div>
         <div class="gallery__photos-wrapper">
           <div class="gallery__item">
-            <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="user-photowork">
+            <!--<img class="gallery__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="user-photowork">-->
+            <div class="gallery__picture-wrapper">
+              <picture class="gallery__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="user-photowork">
+              </picture>
+            </div>
             <div class="gallery__description">
               <b class="gallery__username">Левон</b>
               <span class="gallery__time-mark">(5 часов назад)</span>
@@ -57,7 +92,14 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="user-photowork">
+            <!--<img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="user-photowork">-->
+            <div class="gallery__picture-wrapper">
+              <picture class="gallery__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="user-photowork">
+              </picture>
+            </div>
             <div class="gallery__description">
               <b class="gallery__username">Антон</b>
               <span class="gallery__time-mark">(12 часов назад)</span>
@@ -68,7 +110,14 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="user-photowork">
+            <!--<img class="gallery__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="user-photowork">-->
+            <div class="gallery__picture-wrapper">
+              <picture class="gallery__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="user-photowork">
+              </picture>
+            </div>
             <div class="gallery__description">
               <b class="gallery__username">Борис</b>
               <span class="gallery__time-mark">(20 часов назад)</span>
@@ -79,7 +128,14 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="user-photowork">
+            <!--<img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="user-photowork">-->
+            <div class="gallery__picture-wrapper">
+              <picture class="gallery__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="user-photowork">
+              </picture>
+            </div>
             <div class="gallery__description">
               <b class="gallery__username">Сергей</b>
               <span class="gallery__time-mark">(25 часов назад)</span>
@@ -90,7 +146,14 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="user-photowork">
+            <!--<img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="user-photowork">-->
+            <div class="gallery__picture-wrapper">
+              <picture class="gallery__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="user-photowork">
+              </picture>
+            </div>
             <div class="gallery__description">
               <b class="gallery__username">Максим</b>
               <span class="gallery__time-mark">(40 часов назад)</span>
@@ -101,7 +164,14 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="user-photowork">
+            <!--<img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="user-photowork">-->
+            <div class="gallery__picture-wrapper">
+              <picture class="gallery__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="user-photowork">
+              </picture>
+            </div>
             <div class="gallery__description">
               <b class="gallery__username">Надежда</b>
               <span class="gallery__time-mark">(45 часов назад)</span>
@@ -116,7 +186,14 @@
       <section class="share">
         <h2 class="visually-hidden">Загрузка фотографии</h2>
         <p class="share__intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        <img class="share__image" src="img/photo-road-mobile@1x.jpg" width="280" height="375" alt="user-photowork">
+        <!--<img class="share__image" src="img/photo-road-mobile@1x.jpg" width="280" height="375" alt="user-photowork">-->
+        <div class="share__picture-wrapper">
+          <picture class="share__picture">
+            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="share__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="user-photowork">
+          </picture>
+        </div>
         <form  class="share__form" action="https://echo.htmlacademy.ru" method="get">
           <div class="share__filters-wrapper">
             <ul class="share__filters">
@@ -130,12 +207,12 @@
                 <button class="share__filter-button share__filter-button--contrast" type="button" name="button"></button>
               </li>
             </ul>
-            <div>
+            <div class="share__range-wrapper">
               <input type="range" id="effect" name="rangre-effect"
                 min="0" max="100">
               <label for="effect"></label>
             </div>
-            <button class="button button--active" type="button">Запостить</button>
+            <button class="share__button button button--active" type="button">Запостить</button>
             <button class="button button--disable" type="button">Отмена</button>
         </form>
       </section>

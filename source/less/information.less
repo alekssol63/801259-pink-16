@@ -1,73 +1,83 @@
 .information {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  width: 280px;
+  padding: 0 20px;
 }
 
 .information__intro {
-  width: 100%;
+  margin-bottom: 115px;
+}
+
+.information__intro-phrase {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #283645;
   text-align: center;
 }
 
 .information__list {
   list-style: none;
   padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+  text-align: center;
 }
 
-.information__intro-phrase {
-  font-size: 24px;
-  line-height: 1;
-  font-weight: 300;
-  color: #283645;
+.information__item {
+  margin-bottom: 24px;
 }
 
-.information__diagram {
-  display: none;
+.information__item-header {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .information__effect {
   display: none;
 }
 
+.information__opportunities {
+  text-align: center;
+}
+
 @media (min-width: @tablet-width) {
-  .information__list {
-    width: 310px;
-    order: 1;
+  .information {
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .information__intro-phrase {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 0;
   }
 
   .information__opportunities {
     display: flex;
   }
 
-  .information__diagram {
-    display: block;
-    width: 300px;
+  .information__list {
+    width: 310px;
+    text-align: left;
+    padding-left: 10px;
+    order: 2;
   }
 
   .information__effect {
     display: block;
-    width: 310px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .information__list {
-    width: 310px;
-    order: 1;
-  }
-
-  .information__opportunities {
+  .information {
     width: 940px;
-    display: flex;
-  }
-
-  .information__diagram {
-    display: block;
-    width: 300px;
-  }
-
-  .information__effect {
-    display: block;
-    width: 570px;
+    padding: 0 10px;
   }
 }

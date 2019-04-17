@@ -3,7 +3,8 @@
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
-  width: 280px;
+  letter-spacing: 1px;
+  width: 100%;
   background-color: transparent;
   border-radius: 30px;
   padding: 16px;
@@ -21,5 +22,11 @@
   &--disable {
     color: #dddfe0;
     border: 3px solid #dddfe0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    margin-bottom: 40px;
   }
 }
