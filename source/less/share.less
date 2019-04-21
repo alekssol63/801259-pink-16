@@ -56,8 +56,22 @@
 
 .share__range-wrapper {
   margin-bottom: 60px;
+  display: inline-block;
+
+  &--mobile {
+    display: none;
+  }
 }
 
+@media (max-width: @tablet-width) {
+  .share__range-wrapper {
+    display: none;
+
+    &--mobile {
+      display: block;
+    }
+  }
+}
 
 @media (min-width: @tablet-width) {
   .share {

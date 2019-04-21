@@ -10,17 +10,17 @@
     <header class="header">
       <nav  class="main-nav">
         <div class="header__logo">
-          <a class="header__logo-link">
+          <a class="header__logo-link" href="#">
             <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
           </a>
           <button class="header__menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link site-list__link--active" href="#">Главная</a></li>
             <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
             <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="#">HTML Academy</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -29,12 +29,12 @@
           <div class="header__application">
             <h2 class="visually-hidden">Приложение</h2>
             <p class="header__content-intro">Взгляните на жизнь иначе!</p>
-            <button class="button button--download" type="button">Скачать приложение</button>
+            <a class="button button--download" href="https://www.apple.com/ru/itunes/download/">Скачать приложение</a>
             <div class="header__list-wrapper">
               <ul class="header__list os-list">
-                <li class="os-list__item os-list__item--mac"><span class="visually-hidden">MacOS</span></li>
-                <li class="os-list__item os-list__item--android"><span class="visually-hidden">Android</span></li>
-                <li class="os-list__item os-list__item--windows"><span class="visually-hidden">Windows</span></li>
+                <li class="os-list__item os-list__item--mac"> <a class="os-list__link" href="https://www.apple.com/ru/itunes/download/" aria-label="MacOS"></a></li>
+                <li class="os-list__item os-list__item--android"><a class="os-list__link" href="https://play.google.com/store" aria-label="Android"></a></li>
+                <li class="os-list__item os-list__item--windows"><a class="os-list__link" href="https://www.microsoft.com/en-us/store/b/home" aria-label="Windows"></a></li>
               </ul>
               <p class="header__text">
                 Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows8
@@ -105,7 +105,7 @@
       </section>
       <section class="price slider">
         <h2 class="visually-hidden">Цены</h2>
-<!--        <table class="price__table slider__item">
+        <table class="price__table slider__item">
           <tr>
             <th class="first-cell">&nbsp;</th>
             <th>
@@ -140,63 +140,6 @@
             <td class="price__value"></td>
           </tr>
         </table>
--->
-
-<table class="price-slider__table">
-  <tbody><tr class="price-slider__header">
-    <th class="first-cell">&nbsp;</th>
-    <th class="price-slider__table-header">
-    <h3 class="price-slider__caption-header">База</h3>
-     <b class="price-slider__caption-bold">1,99 USD</b>
-     </th>
-                <th class="price-slider__table-header price-slider__table-header">
-                  <h3 class="price-slider__caption-header">Стандарт</h3>
-                  <b class="price-slider__caption-bold">3,99 USD</b>
-                </th>
-                <th class="price-slider__table-header">
-                  <h3 class="price-slider__caption-header">Анлим</h3>
-                  <b class="price-slider__caption-bold">з,99 USD</b>
-                </th>
-              </tr>
-              <tr class="price-slider__row">
-                <td class="price-slider__cell">Розовый фильтр</td>
-                <td class="price-slider__cell price-slider__cell--available">
-
-
-<span class="visually-hidden">Наличие опции</span></td>
-                <td class="price-slider__cell price-slider__cell--available"><span class="visually-hidden">Наличие опции</span></td>
-                <td class="price-slider__cell price-slider__cell--available"><span class="visually-hidden">Наличие опции</span></td>
-              </tr>
-              <tr class="price-slider__row">
-                <td class="price-slider__cell">Смайлики</td>
-                <td class="price-slider__cell price-slider__cell--inaccessible"><span class="visually-hidden">Наличие опции</span></td>
-                <td class="price-slider__cell price-slider__cell--available"><span class="visually-hidden">Наличие опции</span></td>
-                <td class="price-slider__cell price-slider__cell--available"><span class="visually-hidden">Наличие опции</span></td>
-              </tr>
-              <tr class="price-slider__row">
-                <td class="price-slider__cell">Комментарии</td>
-                <td class="price-slider__cell price-slider__cell--inaccessible"><span class="visually-hidden">Наличие опции</span></td>
-                <td class="price-slider__cell price-slider__cell--inaccessible"><span class="visually-hidden">Наличие опции</span></td>
-                <td class="price-slider__cell price-slider__cell--available"><span class="visually-hidden">Наличие опции</span></td>
-              </tr>
-            </tbody></table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <p class="price__toggles slider__toggles">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
@@ -261,7 +204,7 @@
         </ul>
         <div class="social__copyright">
           <p class="social__text">Разработано</p>
-          <a class="social__copyright-logo"><img class="footer__developer-image" src="img/logo-htmlacademy.svg" alt="Логотип"></a>
+          <a class="social__copyright-logo"  href="https://htmlacademy.ru/intensive/adaptive"><img class="footer__developer-image" src="img/logo-htmlacademy.svg" alt="Логотип"></a>
         </div>
       </div>
     </footer>

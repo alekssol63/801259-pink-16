@@ -7,39 +7,20 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <!--<header class="header">
-      <div class="header__logo">
-        <a class="header__logo-link">
-          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
-        </a>
-        <button class="header__menu-toggle" type="button"></button>
-      </div>
-      <nav  class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="#">HTML Academy</a></li>
-          </ul>
-        </div>
-      </nav>
-      <h2 class="header__intro">Фотографии пользователей</h2>
-    </header>-->
     <header class="header">
       <nav  class="main-nav">
         <div class="header__logo">
-          <a class="header__logo-link">
+          <a class="header__logo-link" href="index.html">
             <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
           </a>
           <button class="header__menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link site-list__link--active" href="#">Фотографии</a></li>
             <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="#">HTML Academy</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -58,7 +39,6 @@
           Видите, как не хватает ваших?
         </p>
         <div class="gallery__item gallery__item--panorama">
-          <!--<img class="gallery__image gallery__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="user-panorama">-->
           <picture class="gallery__picture">
             <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
@@ -200,15 +180,30 @@
             <ul class="share__filters">
               <li class="share__filters-item">
                 <button class="share__filter-button share__filter-button--crop" type="button" name="button"></button>
+                <div class="share__range-wrapper">
+                  <input type="range" id="crop" name="rangre-effect"
+                    min="0" max="100">
+                  <label for="crop"></label>
+                </div>
               </li>
               <li class="share__filters-item">
                 <button class="share__filter-button share__filter-button--fill" type="button" name="button"></button>
+                <div class="share__range-wrapper">
+                  <input type="range" id="fill" name="rangre-effect"
+                    min="0" max="100">
+                  <label for="fill"></label>
+                </div>
               </li>
               <li class="share__filters-item">
                 <button class="share__filter-button share__filter-button--contrast" type="button" name="button"></button>
+                <div class="share__range-wrapper">
+                  <input type="range" id="contrast" name="rangre-effect"
+                    min="0" max="100">
+                  <label for="contrast"></label>
+                </div>
               </li>
             </ul>
-            <div class="share__range-wrapper">
+            <div class="share__range-wrapper share__range-wrapper--mobile">
               <input type="range" id="effect" name="rangre-effect"
                 min="0" max="100">
               <label for="effect"></label>
@@ -256,7 +251,7 @@
         </ul>
         <div class="footer__copyright">
           <p class="footer__text">Разработано</p>
-          <a class="footer__copyright-logo"><img class="footer__developer-image" src="img/logo-htmlacademy.svg" alt="Логотип"></a>
+          <a class="footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="footer__developer-image" src="img/logo-htmlacademy.svg" alt="Логотип"></a>
         </div>
       </div>
     </footer>
