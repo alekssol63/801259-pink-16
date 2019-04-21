@@ -1,5 +1,4 @@
 .information {
-  width: 280px;
   padding: 0 20px;
 }
 
@@ -18,6 +17,12 @@
   text-align: center;
 }
 
+.information__opportunities {
+  text-align: center;
+  padding-bottom: 280px;
+  background: url("../img/iphone-screen-mobile@1x.png") center 425px no-repeat;
+}
+
 .information__list {
   list-style: none;
   padding: 0;
@@ -27,57 +32,119 @@
 }
 
 .information__item {
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .information__item-header {
   margin: 0;
   padding: 0;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.information__item-text {
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
 }
 
 .information__effect {
   display: none;
 }
 
-.information__opportunities {
-  text-align: center;
+@media (max-width: @tablet-width) {
+  .reviews__user-description {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .information {
-    width: 620px;
     padding: 0 20px;
+  }
+
+  .information__intro {
+    margin-bottom: 51px;
   }
 
   .information__intro-phrase {
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 0;
+
+    &--short {
+      padding: 0 135px;
+    }
   }
 
   .information__opportunities {
+    padding-top: 71px;
+    padding-bottom: 76px;
     display: flex;
+    justify-content: flex-end;
+    background: url("../img/iphone-screen-3-tablet@1x.png") top left no-repeat;
   }
 
   .information__list {
     width: 310px;
     text-align: left;
-    padding-left: 10px;
-    order: 2;
+    padding-right: 2px;
+  }
+
+  .information__item {
+    margin-bottom: 32px;
   }
 
   .information__effect {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 125px;
+  }
+
+  .information__effect-declaration {
+    width: 310px;
+  }
+
+  .information__effect-header {
+    font-size: 30px;
+    margin: 0;
+    white-space: pre-line;
+    padding: 0;
+    margin-bottom: 15px;
+    line-height: 33px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .information__effect-text {
+    margin: 0;
+    line-height: 24px;
+    white-space: pre-line;
+    margin-bottom: 8px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .information {
-    width: 940px;
-    padding: 0 10px;
+    padding: 0 130px;
+  }
+
+  .information__intro-phrase {
+    font-size: 50px;
+    line-height: 48px;
+    margin-bottom: 6px;
+
+    &--short {
+      line-height: 58px;
+      margin: 0;
+      padding: 0 250px;
+    }
   }
 }
