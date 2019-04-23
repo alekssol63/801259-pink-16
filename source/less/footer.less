@@ -11,6 +11,14 @@
   text-align: center;
 }
 
+.footer__contacts {
+  padding-top: 35px;
+}
+
+.footer__contacts-item {
+  margin-bottom: 27px;
+}
+
 .footer__intro-phrase {
   font-size: 24px;
   line-height: 1.25;
@@ -23,13 +31,20 @@
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
 }
-
+/*
 .footer__text {
   font-size: 24px;
-  line-height: 0.75;
+  line-height: 1.17;
   font-weight: 300;
+  margin: 0;
+  display: block;
+  color: #d22856;
 }
+*/
+
 
 .footer__iframe {
   width: 100%;
@@ -61,29 +76,43 @@
   .footer__contacts {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 47px;
+    margin-top: 15px;
   }
 
   .footer__contacts-item {
     width: 300px;
-    margin: 0 auto;
-    margin-bottom: 60px;
+    //margin: 0 auto;
+    margin-bottom: 51px;
+
+    &:nth-child(3) {
+      margin: 0 auto;
+    }
+  }
+
+  .footer__caption {
+    margin-bottom: 8px;
   }
 
   .footer__text {
     margin: 0;
     padding: 0 15px;
     font-size: 24px;
-    line-height: 18px;
+    line-height: 1.17;
     font-weight: 300;
     color: #d22856;
+  }
+
+  .footer__iframe {
+    height: 401px;
+    margin-bottom: 27px;
   }
 
   .footer__social-block {
     width: 620px;
     padding: 0 20px;
-    margin: 0 auto;
+    padding-bottom: 35px;
   }
 }
 
@@ -92,14 +121,48 @@
     width: 1200px;
   }
 
+  .footer__intro-phrase {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+
   .footer__contacts-wrapper {
     width: 940px;
     padding: 0 10px;
   }
 
+  .footer__contacts {
+    margin-top: 0;
+    padding-top: 58px;
+  }
+
+  .footer__contacts-item {
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+  }
+
+  .footer__caption {
+    margin-bottom: 27px;
+  }
+
+  .footer__iframe {
+    height: 500px;
+    margin-bottom: 60px;
+  }
+
+
   .footer__social-block {
     width: 940px;
-    padding: 0 10px;
-    margin: 0 auto;
+    padding: 0 130px;
+    padding-bottom: 68px;
   }
 }

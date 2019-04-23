@@ -166,7 +166,11 @@
       </section>
       <section class="share">
         <h2 class="visually-hidden">Загрузка фотографии</h2>
-        <p class="share__intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="share__intro-wrapper">
+          <p class="share__intro">Затмите их всех!</p>
+          <p class="share__intro">Выкладывайте все, что накопилось в
+            телефоне!</p>
+        </div>
         <!--<img class="share__image" src="img/photo-road-mobile@1x.jpg" width="280" height="375" alt="user-photowork">-->
         <div class="share__picture-wrapper">
           <picture class="share__picture">
@@ -208,9 +212,8 @@
                 min="0" max="100">
               <label for="effect"></label>
             </div>
-            <button class="share__button button button--active" type="button">Запостить</button>
-            <button class="button button--disable" type="button">Отмена</button>
-          </div>
+              <button class="share__button button button--active" type="button">Запостить</button>
+              <button class="button button--disable" type="button">Отмена</button>
         </form>
       </section>
     </main>
@@ -249,9 +252,8 @@
             </a>
           </li>
         </ul>
-        <div class="footer__copyright">
-          <p class="footer__text">Разработано</p>
-          <a class="footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="footer__developer-image" src="img/logo-htmlacademy.svg" alt="Логотип"></a>
+        <div class="social__copyright">
+          <a class="social__copyright-logo"  href="https://htmlacademy.ru/intensive/adaptive"><p class="social__text">Разработано</p><img class="footer__developer-image" src="img/logo-htmlacademy.svg" alt="Логотип"></a>
         </div>
       </div>
     </footer>
