@@ -1,13 +1,26 @@
 .competition__description {
   line-height: 2.2;
   margin: 0;
-  margin-bottom: 34px;
   padding: 0 20px;
+  padding-bottom: 34px;
   text-align: center;
 }
 
 @media (max-width: @tablet-width) {
-  .competition__mobile-hidden {
-    display: none;
+  .competition__description {
+    &--hidden {
+      font-size: 18px;
+      line-height: 1.7;
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .competition__description {
+    padding: 0 70px;
+    padding-bottom: 0;
+    font-size: 18px;
+    line-height: 1.7;
   }
 }

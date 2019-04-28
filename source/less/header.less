@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   position: relative;
 }
 
@@ -18,12 +19,40 @@
   display: flex;
 }
 
+.header__logo-image {
+  &:hover {
+    .header__logo-pink-white-mobile {
+      fill: #d22856;
+    }
+  }
+}
+
+.header__logo-pink-white-tablet {
+  display: none;
+}
+
+.header__logo-pink-white-desktop {
+  display: none;
+}
+
 .header__menu-toggle {
-  background: url("../img/icon-menu-burger.svg") no-repeat center center;
+  position: relative;
+  //background: url("../img/icon-menu-burger.svg") no-repeat center center;
+  background-image: url("data:image/svg+xml,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='49.95' height='24.01'%3E%3Cpath fill='%23FFF' d='M1.14 0C.5 0 0 .43 0 1.01v1.98C0 3.55.5 4 1.14 4H48.8c.63 0 1.14-.43 1.14-1V1c0-.56-.5-1.01-1.14-1.01H1.14zm0 10C.5 10 0 10.43 0 11.01V13C0 13.55.5 14 1.14 14H48.8c.63 0 1.14-.42 1.14-1V11c0-.55-.5-1-1.14-1H1.14zm0 10C.5 20 0 20.43 0 21.02V23c0 .55.5 1 1.14 1H48.8c.63 0 1.14-.42 1.14-1v-1.98c0-.56-.5-1.02-1.14-1.02H1.14z'/%3E%3Cpath fill='%23FFF' d='M1.14 0C.5 0 0 .43 0 1.01v1.98C0 3.55.5 4 1.14 4H48.8c.63 0 1.14-.43 1.14-1V1c0-.56-.5-1.01-1.14-1.01H1.14zm0 10C.5 10 0 10.43 0 11.01V13C0 13.55.5 14 1.14 14H48.8c.63 0 1.14-.42 1.14-1V11c0-.55-.5-1-1.14-1H1.14zm0 10C.5 20 0 20.43 0 21.02V23c0 .55.5 1 1.14 1H48.8c.63 0 1.14-.42 1.14-1v-1.98c0-.56-.5-1.02-1.14-1.02H1.14z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-color: transparent;
   border: none;
   width: 50px;
   height: 69px;
+
+}
+
+
+.header__icon-menu-burger {
+  position: absolute;
+  top: 23px;
+  left: 0;
 }
 
 .header__content {
@@ -31,7 +60,7 @@
 
   &--index {
     background:
-      url("../img/iphone-hand-mobile@1x.png") left 175px no-repeat,
+      url("../img/iphone-hand-mobile@1x.png") left 172px no-repeat,
       url("../img/bg-back-mobile@1x.jpg") no-repeat;
   }
 }
@@ -58,6 +87,10 @@
   font-weight: 300;
   color: #ffffff;
   text-align: center;
+
+  &--form {
+    padding-bottom: 50px;
+  }
 }
 
 .header__application {
@@ -83,7 +116,7 @@
 
 .header__text {
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
   font-size: 14px;
   line-height: 1.71;
   font-weight: 300;
@@ -94,6 +127,10 @@
 @media (min-width: @tablet-width) {
   .header {
     width: 660px;
+
+    &--form {
+      margin-bottom: 92px;
+    }
   }
 
   .header__logo {
@@ -101,6 +138,31 @@
 
     width: 620px;
     padding: 0 20px;
+    align-items: center;
+  }
+
+
+  .header__logo-pink-white-mobile {
+    display: none;
+  }
+
+  .header__logo-pink-white-tablet {
+    display: block;
+  }
+
+  .header__logo-image {
+    width: 150px;
+    height: 41px;
+
+    &:hover {
+      .header__logo-pink-white-tablet {
+        fill: #d22856;
+      }
+    }
+  }
+
+  .header__logo-pink-white-desktop {
+    display: none;
   }
 
   .header__content {
@@ -108,7 +170,7 @@
 
     &--index {
       background:
-        url("../img/iphone-hand-tablet@1x.png") -20px 135px no-repeat,
+        url("../img/iphone-hand-tablet@1x.png") -20px 181px no-repeat,
         url("../img/bg-back-tablet@1x.jpg") no-repeat;
     }
   }
@@ -127,12 +189,11 @@
 
   .header__application {
     width: 300px;
-    padding-top: 44px;
+    padding-top: 199px;
   }
 
   .header__content-intro {
     display: block;
-    padding-top: 110px;
   }
 
   .header__text {
@@ -143,10 +204,15 @@
 
   .header__content-title {
     width: 360px;
-    margin-top: 132px;
-    margin-bottom: 139px;
+    padding-top: 134px;
+    padding-bottom: 138px;
     font-size: 50px;
     line-height: 60px;
+
+    &--form {
+      width: 620px;
+      padding-bottom: 76px;
+    }
   }
 }
 
@@ -172,6 +238,34 @@
     //margin: 0 auto;
   }
 
+  .header__logo-pink-white-mobile {
+    display: none;
+  }
+
+  .header__logo-pink-white-tablet {
+    display: none;
+  }
+
+  .header__logo-pink-white-desktop {
+    display: block;
+  }
+
+  .header__logo-image {
+    &:hover {
+      .header__logo-pink-white-desktop {
+        fill: #d22856;
+      }
+    }
+  }
+/*
+  .header__logo-pink-white-desktop {
+    display: block;
+
+    &:hover {
+      fill: #d22856;
+    }
+  }
+*/
   .header__content-wrapper {
     width: 940px;
     padding: 0 10px;
@@ -183,8 +277,9 @@
   }
 
   .header__content-title {
-    margin-top: 63px;
-    margin-bottom: 100px;
+    width: 100%;
+    padding-top: 172px;
+    padding-bottom: 101px;
   }
 
   .header__content-intro {

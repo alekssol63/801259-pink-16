@@ -1,14 +1,23 @@
-.social {
+/*.social {
   padding: 0 20px;
   text-align: center;
+}
+*/
+.social {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .social__list {
   width: 150px;
   display: flex;
+  margin: 0;//добавил фото
+  margin-bottom: 39px;//добавил фото
   justify-content: space-between;
   list-style: none;
-  padding: 0 75px;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -19,10 +28,16 @@
 
 .social__logo {
   width: 150px;
+  margin-bottom: 45px;
 }
 
 .social__copyright-logo {
   text-decoration: none;
+
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9px;
 }
 
 .social__text {
@@ -31,26 +46,25 @@
 
 @media (min-width: @tablet-width) {
   .social {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
-/*
-  .social__list {
-    display: flex;
-    justify-content: space-around;
+
+  .social__logo {
+    margin-bottom: 0;
   }
-*/
 
   .social__list {
     list-style: none;
-    padding: 0px 5px;
-
+    padding: 0 5px;
+    //padding: 0 75px;
+    margin: 0;//добавил фото
     display: flex;
     justify-content: space-between;
   }
 
   .social__copyright-logo {
-    display: flex;
+    padding: 0;
   }
 
   .social__text {

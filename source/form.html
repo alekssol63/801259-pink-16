@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
+    <header class="header header--form">
       <nav  class="main-nav">
         <div class="header__logo">
           <a class="header__logo-link" href="index.html">
@@ -26,15 +26,17 @@
       </nav>
       <section class="header__content">
         <div class="header__content-wrapper">
-          <h2 class="header__content-title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+          <h2 class="header__content-title header__content-title--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
         </div>
       </section>
     </header>
-    <main class="main">
+    <main class="main main--form">
       <h1 class="visually-hidden">«Конкурс»</h1>
       <section class="competition">
         <h2 class="visually-hidden">«Данные участника»</h2>
-        <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="competition__mobile-hidden">Пожалуйста, заполните форму ниже:</span> </p>
+        <p class="competition__description">Поделитесь своей историей и получите шанс выиграть
+          ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="competition__description competition__description--hidden">Пожалуйста, заполните форму ниже:</p>
         <form class="form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="form__input-block form__input-block--user-data">
             <div class="form__fields-wrapper form__fields-wrapper--user-data">
@@ -82,20 +84,21 @@
             </div>
           </fieldset>
           <fieldset class="form__input-block form__input-block--user-contacts">
+            <legend class="form__title form__title--user-contacts">Контактная информация</legend>
             <div class="form__fields-wrapper form__fields-wrapper--user-contacts">
               <p class="form__field form__field--user-contacts">
-                <label class="form__label" for="phone">Номер телефона</label>
-                <input class="form__input" type="tel" id="phone" value=""  placeholder="Номер, пожалуйста">
+                <label class="form__label form__label--user-contacts" for="phone">Номер телефона</label>
+                <input class="form__input form__input--user-contacts" type="tel" id="phone" value=""  placeholder="Номер, пожалуйста">
               </p>
               <p class="form__field form__field--user-contacts">
-                <label class="form__label" for="mail">Адрес почты</label>
-                <input class="form__input" type="email" id="mail" value=""  placeholder="Введите почту *">
+                <label class="form__label form__label--user-contacts" for="mail">Адрес почты</label>
+                <input class="form__input form__input--user-contacts" type="email" id="mail" value=""  placeholder="Введите почту *">
               </p>
             </div>
           </fieldset>
 
           <fieldset class="form__input-block form__input-block--application">
-            <legend class="form__title">С каким приложением путешествовали?</legend>
+            <legend class="form__title form__title--application">С каким приложением путешествовали?</legend>
             <div class="form__fields-wrapper form__fields-wrapper--application">
               <p class="form__field form__field--application">
                 <input type="radio" class="form__radio visually-hidden" name="radio-application" id="ios" checked>

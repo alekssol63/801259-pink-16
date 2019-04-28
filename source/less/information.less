@@ -1,12 +1,39 @@
 .information {
-  padding: 0 20px;
+  //padding: 0 20px;
 }
 
 .information__intro {
-  margin-bottom: 115px;
+  //margin-bottom: 65px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='1200' height='94.07'%3E%3Cpath fill='%23fff' d='M1200 0H0v94.07z'/%3E%3C/svg%3E%0A");
+    left: 0;
+    top: 110px;
+    width: 320px;
+    height: 94.4px;
+    z-index: 0;
+  }
+}
+
+.information__diagram {
+  position: relative;
+}
+
+.information__diagram-digit {
+  bottom: 42px;
+  left: 63px;
+  position: absolute;
+  color: pink;
+  font-size: 96px;
+  font-weight: 700;
 }
 
 .information__intro-phrase {
+  position: relative;
+  z-index: 1;
   font-size: 24px;
   margin: 0;
   padding: 0;
@@ -19,13 +46,15 @@
 
 .information__opportunities {
   text-align: center;
+  padding: 0;
+  padding-top: 86px;
   padding-bottom: 280px;
-  background: url("../img/iphone-screen-mobile@1x.png") center 425px no-repeat;
+  background: url("../img/iphone-screen-mobile@1x.png") center 511px no-repeat #f2f2f2;
 }
 
 .information__list {
   list-style: none;
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
   margin-bottom: 35px;
   text-align: center;
@@ -81,13 +110,15 @@
 
   .information__opportunities {
     padding-top: 71px;
-    padding-bottom: 76px;
+    padding-bottom: 67px;
     display: flex;
     justify-content: flex-end;
-    background: url("../img/iphone-screen-3-tablet@1x.png") top left no-repeat;
+    background: url("../img/iphone-screen-3-tablet@1x.png") top left no-repeat #f2f2f2;
   }
 
   .information__list {
+    padding: 0;
+    margin-bottom: 0;
     width: 310px;
     text-align: left;
     padding-right: 2px;
@@ -99,12 +130,13 @@
 
   .information__effect {
     display: flex;
-    justify-content: flex-end;
-    padding-bottom: 125px;
+    justify-content: space-between;
+    padding-bottom: 89px;
   }
 
   .information__effect-declaration {
     width: 310px;
+    padding-top: 41px;
   }
 
   .information__effect-header {
