@@ -2,17 +2,34 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 42px;
+  padding-bottom: 44px;
+  overflow: hidden;
+
+  &--form {
+    padding-top: 47px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main {
     width: 660px;
     padding-top: 48px;
+    padding-bottom: 49px;
+
+    &--form {
+      padding-top: 0;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .main {
     width: 1200px;
+    padding-top: 72px;
+    padding-bottom: 65px;
+
+    &--form {
+      padding-top: 0;
+    }
   }
 }

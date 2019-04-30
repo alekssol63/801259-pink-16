@@ -1,7 +1,9 @@
 .os-list {
   list-style: none;
-  padding: 0;
-  justify-content: space-around;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0 25px;
+  justify-content: space-between;
   display: flex;
   flex-direction: row;
 }
@@ -14,7 +16,7 @@
   &--mac {
     background-image: url("../img/logo-apple.svg");
     background-repeat: no-repeat;
-    background-position: 22px 5px;
+    background-position: 13px 5px;
   }
 
   &--android {
@@ -26,7 +28,7 @@
   &--windows {
     background-image: url("../img/logo-microsoft.svg");
     background-repeat: no-repeat;
-    background-position: 0 18px;
+    background-position: 13px 17px;
   }
 }
 
@@ -39,6 +41,7 @@
 @media (min-width: @tablet-width) {
   .os-list {
     margin: 0;
+    padding: 0 34px;
     margin-bottom: 30px;
   }
 }

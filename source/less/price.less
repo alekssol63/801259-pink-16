@@ -1,3 +1,176 @@
 .price {
   padding: 0 20px;
+  padding-top: 88px;
+  background-color: #f2f2f2;
+  padding-bottom: 54px;
+}
+
+.price__toggles {
+  text-align: center;
+}
+
+.price__table {
+  width: 400%;
+  border-collapse: collapse;
+
+  position: relative;
+  left: -200%;
+}
+
+.price__caption {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-top: 17px;
+  font-size: 18px;
+  line-height: 1.67;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price__header-cell,
+.price__field {
+  box-sizing: border-box;
+  width: 235px;
+  font-size: 18px;
+}
+
+.price__header-cell {
+  background-color: #283645;
+  color: #ffffff;
+
+  &--first-cell {
+    background-color: transparent;
+  }
+}
+
+.price__bold {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price__option {
+  position: absolute;
+  left: 50%;
+  padding-left: 23px;
+  padding-top: 17px;
+  padding-bottom: 13px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.price__field {
+  text-align: right;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+@media (min-width: @tablet-width) {
+  .price {
+    background-color: #f2f2f2;
+    padding-top: 85px;
+    padding-bottom: 25px;
+  }
+
+  .price__table {
+    width: 100%;
+    position: static;
+  }
+
+  .price__caption {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .price__bold {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 1.67;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .price__option {
+    position: static;
+    background-color: white;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    text-transform: none;
+    border: 1px solid black;
+  }
+
+  .price__header-cell,
+  .price__field {
+    width: 150px;
+    font-size: 16px;
+  }
+
+  .price__field {
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price {
+    padding: 0 130px;
+    background-color: #f2f2f2;
+    padding-top: 145px;
+    padding-bottom: 53px;
+  }
+
+  .price__caption {
+    margin-top: 17px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .price__option {
+    font-size: 18px;
+    padding-left: 21px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+  }
+
+  .price__bold {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .price__header-cell,
+  .price__field {
+    width: 235px;
+    font-size: 18px;
+  }
+
+  .price__field {
+    padding-top: 16px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
