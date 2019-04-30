@@ -5,6 +5,8 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 50px;
+  border: 1px solid red;
+  margin: 0 auto;
 }
 
 .pop-up__header {
@@ -33,16 +35,32 @@
   .pop-up__header {
     font-size: 30px;
     line-height: 1.3;
+    padding: 0 40px;
+    padding-bottom: 25px;
   }
 
   .pop-up__text {
     font-size: 18px;
     line-height: 1.3;
+    white-space: normal;
   }
 }
 
 @media (min-width: @desktop-width) {
   .pop-up {
-    width: 785px;
+    width: 465px;
+    padding-top: 52px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 52px;
+  }
+
+  .pop-up__header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .pop-up__text {
+    padding: 0 35px;
   }
 }

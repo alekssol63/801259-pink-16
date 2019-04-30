@@ -31,10 +31,14 @@
 */
 
 .header__logo-link {
-  color: red;
+  color: white;
 
-  svg {
-    fill: currentColor;
+  &:hover {
+    color: #d22856;
+
+    svg {
+      fill: currentColor;
+    }
   }
 }
 
@@ -48,16 +52,21 @@
 }
 
 .header__menu-toggle {
+  color: white;
+
+  svg {
+    fill: currentColor;
+  }
   position: relative;
-  //background: url("../img/icon-menu-burger.svg") no-repeat center center;
-  background-image: url("data:image/svg+xml,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='49.95' height='24.01'%3E%3Cpath fill='%23FFF' d='M1.14 0C.5 0 0 .43 0 1.01v1.98C0 3.55.5 4 1.14 4H48.8c.63 0 1.14-.43 1.14-1V1c0-.56-.5-1.01-1.14-1.01H1.14zm0 10C.5 10 0 10.43 0 11.01V13C0 13.55.5 14 1.14 14H48.8c.63 0 1.14-.42 1.14-1V11c0-.55-.5-1-1.14-1H1.14zm0 10C.5 20 0 20.43 0 21.02V23c0 .55.5 1 1.14 1H48.8c.63 0 1.14-.42 1.14-1v-1.98c0-.56-.5-1.02-1.14-1.02H1.14z'/%3E%3Cpath fill='%23FFF' d='M1.14 0C.5 0 0 .43 0 1.01v1.98C0 3.55.5 4 1.14 4H48.8c.63 0 1.14-.43 1.14-1V1c0-.56-.5-1.01-1.14-1.01H1.14zm0 10C.5 10 0 10.43 0 11.01V13C0 13.55.5 14 1.14 14H48.8c.63 0 1.14-.42 1.14-1V11c0-.55-.5-1-1.14-1H1.14zm0 10C.5 20 0 20.43 0 21.02V23c0 .55.5 1 1.14 1H48.8c.63 0 1.14-.42 1.14-1v-1.98c0-.56-.5-1.02-1.14-1.02H1.14z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center center;
+
   background-color: transparent;
   border: none;
   width: 50px;
   height: 69px;
 
+  &:hover {
+    color: #d22856;
+  }
 }
 
 
@@ -65,6 +74,12 @@
   position: absolute;
   top: 23px;
   left: 0;
+}
+
+.header__icon-menu-cross {
+  position: absolute;
+  top: 20px;
+  left: 27px;
 }
 
 .header__content {
@@ -146,11 +161,18 @@
   }
 
   .header__logo {
-    height: 110px;
+    /* height: 110px;
 
     width: 620px;
     padding: 0 20px;
     align-items: center;
+    */
+    box-sizing: border-box;
+    height: 110px;
+    width: 660px;
+    padding: 0 20px;
+    padding-top: 25px;
+    align-items: normal;
   }
 
 
@@ -187,6 +209,10 @@
     }
   }
 
+  .header__icon-menu-burger {
+    top: 15px;
+  }
+
   .header__content-wrapper {
     width: 620px;
     padding: 0 20px;
@@ -216,7 +242,7 @@
 
   .header__content-title {
     width: 360px;
-    padding-top: 134px;
+    padding-top: 176px;
     padding-bottom: 138px;
     font-size: 50px;
     line-height: 60px;
@@ -247,7 +273,8 @@
   .header__logo {
     width: 150px;
     padding: 0;
-    //margin: 0 auto;
+    padding-top: 25px;
+    padding-left: 7px;
   }
 
   .header__logo-pink-white-mobile {
@@ -290,6 +317,7 @@
 
   .header__content-title {
     width: 100%;
+    padding: 0 150px;
     padding-top: 172px;
     padding-bottom: 101px;
   }
