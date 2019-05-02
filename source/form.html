@@ -61,15 +61,15 @@
             <div class="form__fields-wrapper form__fields-wrapper--user-data">
               <p class="form__field form__field--user-data">
                 <label class="form__label" for="surname">Фамилия:</label>
-                <input class="form__input" type="text" id="surname" value=""  placeholder="Укажите фамилию *">
+                <input class="form__input" type="text" id="surname" name="surname" value=""  placeholder="Укажите фамилию *">
               </p>
               <p class="form__field form__field--user-data">
                 <label class="form__label" for="name">Имя:</label>
-                <input class="form__input" type="text" id="name" value=""  placeholder="Введите ваше имя *">
+                <input class="form__input" type="text" id="name" name="name" value=""  placeholder="Введите ваше имя *">
               </p>
               <p class="form__field form__field--user-data">
                 <label class="form__label" for="patronymic">Отчество:</label>
-                <input class="form__input" type="text" id="patronymic" value=""  placeholder="Ну и отчество тоже *">
+                <input class="form__input" type="text" id="patronymic" name="patronymic" value=""  placeholder="Ну и отчество тоже *">
               </p>
             </div>
           </fieldset>
@@ -77,27 +77,27 @@
             <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
             <div class="form__fields-wrapper form__fields-wrapper--attainment">
               <p class="form__field form__field--attainment">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="input-checkbox" id="attainment1" checked>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="input-checkbox" id="attainment1" value="1" checked>
                 <label class="form__label form__label--checkbox" for="attainment1">Сделал селфи с акулой</label>
               </p>
               <p class="form__field form__field--attainment">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="input-checkbox" id="attainment2" checked>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="input-checkbox" id="attainment2" value="2" checked>
                 <label class="form__label form__label--checkbox" for="attainment2">Обгорел на пляже</label>
               </p>
               <p class="form__field form__field--attainment">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="input-checkbox" id="attainment3">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="input-checkbox" id="attainment3" value="3">
                 <label class="form__label form__label--checkbox" for="attainment3">Видел Чака Норриса</label>
               </p>
               <p class="form__field form__field--attainment">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="input-checkbox" id="attainment4">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="input-checkbox" id="attainment4" value="4">
                 <label class="form__label form__label--checkbox" for="attainment4">Накупил сувениров</label>
               </p>
               <p class="form__field form__field--attainment">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="input-checkbox" id="attainment5" checked>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="input-checkbox" id="attainment5" value="5" checked>
                 <label class="form__label form__label--checkbox" for="attainment5">Удержал башню</label>
               </p>
               <p class="form__field form__field--attainment">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="input-checkbox" id="attainment6">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="input-checkbox" value="6" id="attainment6">
                 <label class="form__label form__label--checkbox" for="attainment6">Разгромил отель</label>
               </p>
             </div>
@@ -107,11 +107,11 @@
             <div class="form__fields-wrapper form__fields-wrapper--user-contacts">
               <p class="form__field form__field--user-contacts">
                 <label class="form__label form__label--user-contacts" for="phone">Номер телефона</label>
-                <input class="form__input form__input--user-contacts" type="tel" id="phone" value=""  placeholder="Номер, пожалуйста">
+                <input class="form__input form__input--user-contacts" type="tel" id="phone" name="phone" value=""  placeholder="Номер, пожалуйста">
               </p>
               <p class="form__field form__field--user-contacts">
                 <label class="form__label form__label--user-contacts" for="mail">Адрес почты</label>
-                <input class="form__input form__input--user-contacts" type="email" id="mail" value=""  placeholder="Введите почту *">
+                <input class="form__input form__input--user-contacts" type="email" id="mail" name="mail" value=""  placeholder="Введите почту *">
               </p>
             </div>
           </fieldset>
@@ -119,15 +119,15 @@
             <legend class="form__title form__title--application">С каким приложением путешествовали?</legend>
             <div class="form__fields-wrapper form__fields-wrapper--application">
               <p class="form__field form__field--application">
-                <input type="radio" class="form__radio visually-hidden" name="radio-application" id="ios" checked>
+                <input type="radio" class="form__radio visually-hidden" name="radio-application" value="ios" id="ios" checked>
                 <label class="form__label form__label--radio" for="ios">Pink для iOS</label>
               </p>
               <p class="form__field form__field--application">
-                <input type="radio" class="form__radio visually-hidden" name="radio-application" id="android">
+                <input type="radio" class="form__radio visually-hidden" name="radio-application" value="android" id="android">
                 <label class="form__label form__label--radio" for="android">Pink на Android</label>
               </p>
               <p class="form__field form__field--application">
-                <input type="radio" class="form__radio visually-hidden" name="radio-application" id="windows">
+                <input type="radio" class="form__radio visually-hidden" name="radio-application" value="windows" id="windows">
                 <label class="form__label form__label--radio" for="windows">Windows Phone</label>
               </p>
             </div>
@@ -136,7 +136,7 @@
             <legend class="form__title">Опишите свои эмоции</legend>
             <textarea class="form__message" name="letter" rows="15" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <input class="form-button button--send" type="submit" value="Отправить форму" name="send">
+          <input class="form-button button button--send" type="submit">
         </form>
       </section>
     </main>

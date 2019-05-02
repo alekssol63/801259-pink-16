@@ -102,12 +102,6 @@
       }
     }
 
-    &:focus {
-      &::before {
-        border-color: #d22856;
-      }
-    }
-
     &::before {
       content: "";
       position: absolute;
@@ -149,12 +143,12 @@
         border-color: #d22856;
       }
     }
+  }
+}
 
-    &:focus {
-      &::before {
-        border-color: #d22856;
-      }
-    }
+.form__radio:focus + .form__label--radio {
+  &::before {
+    border-color: #d22856;
   }
 }
 
@@ -168,6 +162,12 @@
     height: 0;
     border: 8px solid #d22856;
     border-radius: 50%;
+  }
+}
+
+.form__checkbox:focus + .form__label--checkbox {
+  &::before {
+    border-color: #d22856;
   }
 }
 
@@ -223,6 +223,19 @@
   line-height: 1.7;
   color: #283645;
   border: 2px solid #e5e5e5;
+  outline: 0;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #d22856;
+  }
+
+  &:focus {
+    border-color: #d22856;
+  }
 }
 
 
