@@ -18,37 +18,39 @@
       </symbol>
     </svg>
     <header class="header">
-      <nav  class="main-nav main-nav--closed main-nav--nojs">
-        <div class="header__logo">
-          <a class="header__logo-link" href="#">
-            <svg class="header__logo-pink-white-mobile" width="75" height="25">
-              <use xlink:href="img/sprite.svg#icon-logo-pink-white-mobile"></use>
-            </svg>
-            <svg class="header__logo-pink-white-tablet" width="145" height="40">
-              <use xlink:href="img/sprite.svg#icon-logo-pink-white-tablet"></use>
-            </svg>
-            <svg class="header__logo-pink-white-desktop" width="145" height="40">
-              <use xlink:href="img/sprite.svg#icon-logo-pink-white-desktop"></use>
-            </svg>
-          </a>
-          <button class="header__menu-toggle" type="button" aria-label="Открыть меню">
-            <svg class="header__icon-menu-burger" width="50" height="25">
-              <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
-            </svg>
-            <svg class="header__icon-menu-cross" width="25" height="25">
-              <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link site-list__link--active" href="#">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="header__main-nav-wrrapper">
+        <nav  class="main-nav main-nav--closed main-nav--nojs">
+          <div class="header__logo">
+            <a class="header__logo-link" href="#">
+              <svg class="header__logo-pink-white-mobile" width="75" height="25">
+                <use xlink:href="img/sprite.svg#icon-logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="header__logo-pink-white-tablet" width="145" height="40">
+                <use xlink:href="img/sprite.svg#icon-logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="header__logo-pink-white-desktop" width="145" height="40">
+                <use xlink:href="img/sprite.svg#icon-logo-pink-white-desktop"></use>
+              </svg>
+            </a>
+            <button class="header__menu-toggle" type="button" aria-label="Открыть меню">
+              <svg class="header__icon-menu-burger" width="50" height="25">
+                <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+              </svg>
+              <svg class="header__icon-menu-cross" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="main-nav__navigation-wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a class="site-list__link site-list__link--active" href="#">Главная</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
       <section class="header__content header__content--index">
         <div class="header__content-wrapper header__content-wrapper--index">
           <div class="header__application">
@@ -78,57 +80,71 @@
           <p class="information__intro-phrase information__intro-phrase--short">Нам есть, что вам  предложить!</p>
         </div>
         <div class="information__opportunities">
-          <ul class="information__list">
-            <li class="information__item">
-              <h3 class="information__item-header">Поднимает настроение</h3>
-              <p class="information__item-text">Приложение позволит вам победить осеннюю хандру и депресссию буквально в несколько кликов!</p>
-            </li>
-            <li class="information__item">
-              <h3 class="information__item-header">Меняет мир вокруг</h3>
-              <p class="information__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="information__item">
-              <h3 class="information__item-header">Заводит новых друзей</h3>
-              <p class="information__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <div class="information__effect">
-            <div class="information__diagram">
-              <svg class="information__clock" width="240" height="280">
-                <use xlink:href="#clock"></use>
-              </svg>
-              <span class="information__diagram-digit">24</span>
-            </div>
-            <div class="information__effect-declaration">
-              <h3 class="information__effect-header">Эффект
-                на 24 часа!
-              </h3>
-              <p class="information__effect-text">Британские ученые провели исследования
-                и доказали, что положительный эффект
-                от использования приложения длится
-                целые сутки!
-              </p>
-              <a class="information__effect-link" href="#">Узнать больше об исследовании</a>
+          <div class="information__opportunities-content-wrapper">
+            <ul class="information__list">
+              <li class="information__item">
+                <h3 class="information__item-header">Поднимает настроение</h3>
+                <p class="information__item-text">Приложение позволит вам победить осеннюю хандру и депресссию буквально в несколько кликов!</p>
+              </li>
+              <li class="information__item">
+                <h3 class="information__item-header">Меняет мир вокруг</h3>
+                <p class="information__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="information__item">
+                <h3 class="information__item-header">Заводит новых друзей</h3>
+                <p class="information__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+            <div class="information__effect">
+              <div class="information__diagram">
+                <svg class="information__clock" width="240" height="280">
+                  <use xlink:href="#clock"></use>
+                </svg>
+                <span class="information__diagram-digit">24</span>
+              </div>
+              <div class="information__effect-declaration">
+                <h3 class="information__effect-header">Эффект
+                  на 24 часа!
+                </h3>
+                <p class="information__effect-text">Британские ученые провели исследования
+                  и доказали, что положительный эффект
+                  от использования приложения длится
+                  целые сутки!
+                </p>
+                <a class="information__effect-link" href="#">Узнать больше об исследовании</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="reviews slider">
         <h2 class="visually-hidden">Отзывы</h2>
-        <div class="reviews__list">
-          <article class="reviews__item  slider__item">
-            <h3 class="reviews__author">Николай Петров</h3>
-              <p class="reviews__user-description">25 лет, водитель трамвая</p>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </p>
-          </article>
+        <div class="reviews__content-wrapper">
+          <div class="reviews__list">
+            <article class="reviews__item  slider__item">
+              <h3 class="reviews__author">Николай Петров</h3>
+                <p class="reviews__user-description">25 лет, водитель трамвая</p>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                  А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+            </article>
+          </div>
+          <button class="reviews__button reviews__button--prev slider__button" type="button" aria-label="Next">
+            <svg class="slider__button-icon" width="20" height="40">
+              <use xlink:href="img/sprite.svg#icon-review-arrow-left"></use>
+            </svg>
+          </button>
+          <button class="reviews__button reviews__button--next slider__button" type="button" aria-label="Previous">
+            <svg class="slider__button-icon" width="20" height="40">
+              <use xlink:href="img/sprite.svg#icon-review-arrow-right"></use>
+            </svg>
+          </button>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle active" type="button" aria-label="1"></button>
+            <button class="slider__toggle" type="button" aria-label="2"></button>
+            <button class="slider__toggle" type="button" aria-label="3"></button>
+          </p>
         </div>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle active" type="button" aria-label="1"></button>
-          <button class="slider__toggle" type="button" aria-label="2"></button>
-          <button class="slider__toggle" type="button" aria-label="3"></button>
-        </p>
       </section>
       <section class="price slider">
         <h2 class="visually-hidden">Цены</h2>
@@ -233,7 +249,9 @@
           </div>
         </div>
       </div>
-      <iframe  class="footer__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A8a8feb3e3ea85b4853c66eb741194554513123114edbbd2145a8233ef4e3c07b&amp;source=constructor" height="195"></iframe>
+      <div class="footer__map-wrapper">
+        <iframe  class="footer__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A8a8feb3e3ea85b4853c66eb741194554513123114edbbd2145a8233ef4e3c07b&amp;source=constructor" height="195"></iframe>
+      </div>
       <div class="footer__social-block footer__social-block--index social">
         <div class="social__logo">
           <a class="social__logo-link">

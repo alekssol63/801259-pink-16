@@ -5,24 +5,11 @@
 }
 
 .footer__contacts-wrapper {
-  position: relative;
   width: 280px;
   padding: 0 20px;
   padding-bottom: 15px;
   //margin: 0 auto;
   text-align: center;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/bg-triangle-white-footer.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    left: 0;
-    bottom: -40px;
-    width: 100%;
-    height: 40px;
-  }
 }
 
 .footer__contacts {
@@ -59,6 +46,21 @@
   color: #d22856;
 }
 
+.footer__map-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    bottom: -40px;
+    width: 100%;
+    height: 40px;
+  }
+}
 
 .footer__iframe {
   width: 100%;
@@ -82,13 +84,6 @@
     width: 620px;
     padding: 0 20px;
     padding-bottom: 30px;
-
-    &::after {
-      left: 0;
-      bottom: -74px;
-      width: 100%;
-      height: 75px;
-    }
   }
 
   .footer__intro-phrase {
@@ -128,6 +123,15 @@
     color: #d22856;
   }
 
+  .footer__map-wrapper {
+    &::before {
+      left: 0;
+      bottom: -74px;
+      width: 100%;
+      height: 75px;
+    }
+  }
+
   .footer__iframe {
     height: 375px;
     margin-bottom: 25px;
@@ -142,7 +146,7 @@
 
 @media (min-width: @desktop-width) {
   .footer {
-    width: 1200px;
+    width: 100%;
   }
 
   .footer__intro-phrase {
@@ -152,14 +156,8 @@
 
   .footer__contacts-wrapper {
     width: 940px;
-    padding: 0 130px;
-
-    &::after {
-      left: 0;
-      bottom: -140px;
-      width: 100%;
-      height: 140px;
-    }
+    padding: 0 10px;
+    margin: 0 auto;
   }
 
   .footer__contacts {
@@ -167,7 +165,10 @@
     padding-top: 58px;
   }
 
+
   .footer__contacts-item {
+    margin-left: 0;
+
     &:nth-child(1) {
       order: 1;
     }
@@ -182,7 +183,16 @@
   }
 
   .footer__caption {
-    margin-bottom: 27px;
+    margin-bottom: 29px;
+  }
+
+  .footer__map-wrapper {
+    &::before {
+      left: 0;
+      top: -1px;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .footer__iframe {
@@ -193,7 +203,8 @@
 
   .footer__social-block {
     width: 940px;
-    padding: 0 130px;
+    padding: 0 10px;
+    margin: 0 auto;
     padding-bottom: 68px;
   }
 }

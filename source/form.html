@@ -8,37 +8,39 @@
   </head>
   <body>
     <header class="header header--form">
-      <nav  class="main-nav main-nav--closed main-nav--nojs">
-        <div class="header__logo">
-          <a class="header__logo-link" href="index.html">
-            <svg class="header__logo-pink-white-mobile" width="75" height="25">
-              <use xlink:href="img/sprite.svg#icon-logo-pink-white-mobile"></use>
-            </svg>
-            <svg class="header__logo-pink-white-tablet" width="145" height="40">
-              <use xlink:href="img/sprite.svg#icon-logo-pink-white-tablet"></use>
-            </svg>
-            <svg class="header__logo-pink-white-desktop" width="145" height="40">
-              <use xlink:href="img/sprite.svg#icon-logo-pink-white-desktop"></use>
-            </svg>
-          </a>
-          <button class="header__menu-toggle" type="button" aria-label="Открыть меню">
-            <svg class="header__icon-menu-burger" width="50" height="25">
-              <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
-            </svg>
-            <svg class="header__icon-menu-cross" width="25" height="25">
-              <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link site-list__link--active" href="index.html">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html">Фотографии</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="#">Конкурс</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="header__main-nav-wrrapper">
+        <nav  class="main-nav main-nav--closed main-nav--nojs">
+          <div class="header__logo">
+            <a class="header__logo-link" href="#">
+              <svg class="header__logo-pink-white-mobile" width="75" height="25">
+                <use xlink:href="img/sprite.svg#icon-logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="header__logo-pink-white-tablet" width="145" height="40">
+                <use xlink:href="img/sprite.svg#icon-logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="header__logo-pink-white-desktop" width="145" height="40">
+                <use xlink:href="img/sprite.svg#icon-logo-pink-white-desktop"></use>
+              </svg>
+            </a>
+            <button class="header__menu-toggle" type="button" aria-label="Открыть меню">
+              <svg class="header__icon-menu-burger" width="50" height="25">
+                <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+              </svg>
+              <svg class="header__icon-menu-cross" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="main-nav__navigation-wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a class="site-list__link site-list__link--active" href="index.html">Главная</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="#">Конкурс</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
       <section class="header__content">
         <div class="header__content-wrapper">
           <h2 class="header__content-title header__content-title--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
@@ -49,9 +51,11 @@
       <h1 class="visually-hidden">«Конкурс»</h1>
       <section class="competition">
         <h2 class="visually-hidden">«Данные участника»</h2>
-        <p class="competition__description">Поделитесь своей историей и получите шанс выиграть
-          ценный приз — 1000 миль на вашу бонусную карту!</p>
-        <p class="competition__description competition__description--hidden">Пожалуйста, заполните форму ниже:</p>
+        <div class="competition__description-wrapper">
+          <p class="competition__description">Поделитесь своей историей и получите шанс выиграть
+            ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="competition__description-hidden">Пожалуйста, заполните форму ниже:</span></p>
+        </div>
         <form class="form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="form__input-block form__input-block--user-data">
             <div class="form__fields-wrapper form__fields-wrapper--user-data">
@@ -132,7 +136,7 @@
             <legend class="form__title">Опишите свои эмоции</legend>
             <textarea class="form__message" name="letter" rows="15" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <input class="form-button" type="submit" value="Отправить форму" name="send">
+          <input class="form-button button--send" type="submit" value="Отправить форму" name="send">
         </form>
       </section>
     </main>

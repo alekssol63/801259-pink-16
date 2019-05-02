@@ -9,6 +9,16 @@
   border-radius: 30px;
   padding: 16px;
 
+  &--active {
+    color: #d22856;
+    border: 3px solid #d22856;
+  }
+
+  &--disable {
+    color: #dddfe0;
+    border: 3px solid #dddfe0;
+  }
+
   &--download {
     color: #ffffff;
     border: 3px solid #ffffff;
@@ -24,14 +34,14 @@
     }
   }
 
-  &--active {
-    color: #d22856;
-    border: 3px solid #d22856;
-  }
-
-  &--disable {
-    color: #dddfe0;
-    border: 3px solid #dddfe0;
+  &--send {
+    border-radius: initial;
+    border: none;
+    color: white;
+    background-color: #2aab6d;
+    text-transform: uppercase;
+    width: 280px;
+    padding: 22px;
   }
 }
 
