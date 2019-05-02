@@ -30,20 +30,29 @@
   text-transform: uppercase;
 }
 
-.price__header-cell,
-.price__field {
+.price__header-cell {
   box-sizing: border-box;
   width: 235px;
   font-size: 18px;
-}
-
-.price__header-cell {
   background-color: #283645;
   color: #ffffff;
 
   &--first-cell {
     background-color: transparent;
   }
+}
+
+.price__field {
+  box-sizing: border-box;
+  width: 235px;
+  font-size: 18px;
+  text-align: right;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #e5e5e5;
+  background-color: white;
 }
 
 .price__bold {
@@ -67,16 +76,6 @@
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
-}
-
-.price__field {
-  text-align: right;
-  padding-top: 14px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 1px solid black;
-  background-color: white;
 }
 
 @media (min-width: @tablet-width) {
@@ -116,30 +115,35 @@
     padding-top: 7px;
     padding-bottom: 9px;
     text-transform: none;
-    border: 1px solid black;
+    border: 2px solid #e5e5e5;
   }
 
-  .price__header-cell,
-  .price__field {
+  .price__header-cell {
     width: 150px;
     font-size: 16px;
   }
 
   .price__field {
+    width: 150px;
+    font-size: 16px;
     text-align: center;
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .price__toggles {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .price {
-    padding: 0 130px;
+    padding: 0;
     background-color: #f2f2f2;
-    padding-top: 145px;
-    padding-bottom: 53px;
+    padding-top: 150px;
+    padding-bottom: 92px;
   }
 
   .price__caption {
@@ -152,7 +156,7 @@
     font-size: 18px;
     padding-left: 21px;
     padding-top: 13px;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
   }
 
   .price__bold {
@@ -161,16 +165,32 @@
     line-height: 1.25;
   }
 
-  .price__header-cell,
-  .price__field {
+  .price__header-cell {
     width: 235px;
     font-size: 18px;
+
+    &--first-cell {
+      border: none;
+    }
+
+    &:nth-child(n+1) {
+      border-right: 2px solid #f2f2f2;
+    }
   }
 
   .price__field {
-    padding-top: 16px;
-    padding-bottom: 9px;
+    width: 235px;
+    font-size: 18px;
+    padding-top: 7px;
+    padding-bottom: 0;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .price__table {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: static;
   }
 }

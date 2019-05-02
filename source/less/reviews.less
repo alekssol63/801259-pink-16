@@ -1,10 +1,5 @@
 .reviews {
   position: relative;
-  width: 280px;
-  padding: 0 20px;
-  padding-bottom: 45px;
-  padding-top: 48px;
-  text-align: center;
 
   &::after {
     content: "";
@@ -15,8 +10,17 @@
     left: 0;
     bottom: -28px;
     width: 100%;
-    height: 30px;
+    height: 100%;
   }
+}
+
+.reviews__content-wrapper {
+
+  width: 280px;
+  padding: 0 20px;
+  padding-bottom: 45px;
+  padding-top: 48px;
+  text-align: center;
 }
 
 .reviews__author {
@@ -41,12 +45,12 @@
   z-index: 1;
 }
 
+.reviews__button {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .reviews {
-    width: 620px;
-    padding: 0 20px;
-    padding-bottom: 30px;
-
     &::after {
       content: "";
       position: absolute;
@@ -56,6 +60,12 @@
       height: 60px;
       z-index: 0;
     }
+  }
+
+  .reviews__content-wrapper {
+    width: 620px;
+    padding: 0 20px;
+    padding-bottom: 30px;
   }
 
   .reviews__item {
@@ -84,19 +94,36 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
-    width: 940px;
-    padding: 0 130px;
-
     &::after {
       left: 0;
-      bottom: -90px;
-      height: 90px;
+      top: 223px;
+      height: 100%;
       z-index: 0;
     }
   }
 
+  .reviews__content-wrapper {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+  }
+
   .reviews__list {
     padding: 0 80px;
+    order: 2;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 65px;
+      top: -111px;
+      left: 404px;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   .reviews__author {
@@ -105,10 +132,34 @@
   }
 
   .reviews__text {
-    margin-bottom: 34px;
+    margin-bottom: 36px;
   }
 
   .reviews__user-description {
     font-size: 18px;
+  }
+
+  .reviews__button {
+    display: block;
+
+    &--next {
+      order: 3;
+      padding-top: 28px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 28px;
+    }
+
+    &--prev {
+      order: 1;
+      padding-top: 28px;
+      padding-left: 0;
+      padding-right: 6px;
+      padding-bottom: 28px;
+    }
+  }
+
+  .reviews__toggles {
+    display: none;
   }
 }

@@ -17,8 +17,12 @@
   //margin-bottom: 32px;
 }
 
-.share__publication {
+.share__publication-wrapper {
   background-color: #f2f2f2;
+  width: 100%;
+}
+
+.share__publication {
   padding-top: 20px;
   padding-bottom: 25px;
 }
@@ -229,10 +233,11 @@
 
   .share__publication {
     display: flex;
-
+    justify-content: space-between;
     width: 620px;
     padding: 0 20px;
     padding-top: 57px;
+    padding-bottom: 18px;
   }
 
   .share__filters-wrapper {
@@ -240,13 +245,26 @@
     justify-content: left;
   }
 
+  .share__filters-item {
+    display: flex;
+    padding-bottom: 33px;
+  }
+
   .share__form {
     padding: 0;
   }
 
   .share__filters {
+    padding-right: 0;
+    padding-left: 8px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 51px;
+  }
+
+  .share__filter-button {
+    height: 33px;
+    margin-top: 6px;
   }
 
   .share__icon {
@@ -259,28 +277,108 @@
     }
   }
 
+  .share__range-wrapper {
+    padding-top: 4px;
+    padding-left: 12px;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  .share__range {
+    width: 201px;
+  }
+
   .share__button {
-    margin-bottom: 13px;
-    width: 264px;
+    margin-bottom: 22px;
+    width: 260px;
     margin-left: 27px;
+    padding: 17px;
+    padding-top: 14px;
+    padding-left: 13px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .share {
-    width: 940px;
-    padding: 0 130px;
+    //width: 940px;
+    //padding: 0 130px;
   }
 
   .share__form {
     width: 410px;
   }
-
+  /*
   .share__publication {
     padding: 0 80px;
     padding-top: 55px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }*/
+  .share__publication {
+    width: 800px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 49px;
+    margin: 0 auto;
+  }
+
+  .share__filters-wrapper {
+    width: 410px;
+    padding-bottom: 83px;
+  }
+
+  .share__picture-wrapper {
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+
+  .share__filters {
+    padding-left: 2px;
+  }
+
+  .share__filters-item {
+    padding-bottom: 18px;
+  }
+
+  .share__filter-button {
+    margin-top: 0;
+    margin-right: 28px;
+    width: 60px;
+    height: 54px;
+  }
+
+  .share__icon {
+    width: 50px;
+    height: 50px;
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .share__range-wrapper {
+    padding-top: 8px;
+  }
+
+  .share__range {
+    width: 290px;
+  }
+
+  .share__buttons-wrapper {
+    width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .share__button {
+    width: 185px;
+    margin-bottom: 22px;
+    margin-left: 10px;
+    padding: 17px;
+    padding-top: 14px;
+    padding-left: 13px;
   }
 }
