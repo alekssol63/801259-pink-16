@@ -9,14 +9,37 @@
   border-radius: 30px;
   padding: 16px;
 
-  &--active {
+  &--post {
     color: #d22856;
     border: 3px solid #d22856;
+
+    &:hover {
+      background-color: #d22856;
+      color: #ffffff;
+    }
+
+    &:active {
+      background-color: #d22856;
+      color: #e07e94;
+    }
   }
 
-  &--disable {
-    color: #dddfe0;
+  &--cancel {
+    color: #e3e3e4;
+    background-color: #f2f2f2;
     border: 3px solid #dddfe0;
+
+    &:hover {
+      background-color: #d22856;
+      color: #c2c4c7;
+      border-color: b5b9be;
+    }
+
+    &:active {
+      background-color: #b5b9be;
+      border-color: b5b9be;
+      color: #cdcfd3;
+    }
   }
 
   &--download {
