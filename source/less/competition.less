@@ -7,10 +7,12 @@
 }
 
 @media (max-width: @tablet-width) {
-  .competition__description-hidden {
-    font-size: 18px;
-    line-height: 1.7;
-    display: none;
+  .competition__description {
+    &--hidden {
+      font-size: 18px;
+      line-height: 1.7;
+      display: none;
+    }
   }
 }
 
@@ -20,6 +22,10 @@
     padding-bottom: 0;
     font-size: 18px;
     line-height: 1.7;
+
+    &--hidden {
+      display: inline;
+    }
   }
 }
 
