@@ -1,10 +1,52 @@
 .form {
-  padding-bottom: 106px;
+  padding-bottom: 40px;
+}
+
+.form__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 999;
+}
+
+.form__footnote {
+  margin: 0;
+  font-size: 14px;
+  line-height: 2.1;
+  text-transform: uppercase;
+}
+
+.form__footnote-hidden {
+  display: none;
+}
+
+.form__footnote-star {
+  color: #d22856;
+}
+
+.form__input-block-wrapper {
+  background-color: #f2f2f2;
+
+  &--attainment {
+    padding-top: 38px;
+    margin-bottom: 32px;
+    //order-4,2
+  }
+
+  &--aplication {
+    padding-top: 37px;
+    margin-bottom: 32px;
+  }
 }
 
 .form__fields-wrapper {
   &--attainment {
     padding-top: 43px;
+    padding-bottom: 40px;
+  }
+
+  &--application {
+    padding-top: 40px;
   }
 }
 
@@ -18,6 +60,10 @@
 
   &--attainment {
     padding-bottom: 46px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 
   &--application {
@@ -34,10 +80,6 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #d22856;
-
-  &--application {
-    padding-bottom: 40px;
-  }
 }
 
 .form__input-block {
@@ -46,21 +88,22 @@
   padding: 0 20px;
 
   &--user-data {
-    padding-bottom: 58px;
+    padding-bottom: 21px;
   }
 
-  &--attainment {
-    background-color: f2f2f2;
-    padding-bottom: 26px;
+  &--attainment {/*
+    background-color: #f2f2f2;
+    padding-bottom: 26px;*/
   }
 
   &--application {
-    padding-bottom: 4px;
+    background-color: #f2f2f2;
+    padding-bottom: 3px;
     margin-bottom: 37px;
   }
 
   &--user-contacts {
-    padding-bottom: 60px;
+    padding-bottom: 23px;
   }
 
   &--emotions {
@@ -247,9 +290,10 @@
   }
 }
 
-.form-button {
+.form__button {
   //margin: 0 auto;
   margin: 0 20px;
+  margin-bottom: 36px;
 }
 
 @media (min-width: @tablet-width) {
@@ -470,7 +514,7 @@
     }
   }
 
-  .form-button {
+  .form__button {
     order: 6;
     width: 300px;
   }
