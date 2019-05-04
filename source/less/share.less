@@ -93,13 +93,13 @@
 }
 
 .share__range-wrapper {
-  display: inline-block;
+  display: none;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 65px;
 
   &--mobile {
-    display: none;
+    display: block;
   }
 }
 
@@ -219,17 +219,16 @@
   }
 }
 
-@media (max-width: @tablet-width) {
-  .share__range-wrapper {
-    display: none;
-
-    &--mobile {
-      display: block;
-    }
-  }
-}
 
 @media (min-width: @tablet-width) {
+  .share__range-wrapper {
+    display: block;
+
+    &--mobile {
+      display: none;
+    }
+  }
+
   .share {
 
     display: flex;

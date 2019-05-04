@@ -40,6 +40,40 @@
   &--first-cell {
     background-color: transparent;
   }
+
+  &--hit {
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../img/bg-hit.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 75px;
+      height: 75px;
+      position: absolute;
+      left: 0;
+    }
+
+    &::after {
+      content: "Хит";
+      font-size: 14px;
+      line-height: 2.1;
+      font-weight: 300;
+      color: white;
+      -moz-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      text-transform: uppercase;
+      width: 75px;
+      height: 75px;
+      position: absolute;
+      left: 3px;
+      top: 6px;
+    }
+  }
 }
 
 .price__field {
