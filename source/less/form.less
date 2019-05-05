@@ -338,6 +338,8 @@
     margin: 0;
     padding: 0;
 
+
+
     &--user-data {
       margin-bottom: 6px;
       order: 1;
@@ -377,6 +379,7 @@
 
     &--user-contacts {
       padding-left: 23px;
+      position: relative;
     }
 
     &--radio {
@@ -391,6 +394,32 @@
         left: -61px;
         top: -4px;
       }
+    }
+
+    &--phone::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60.5px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #e5e5e5;
+      top: -73px;
+      right: -13px;
+    }
+
+    &--mail::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60.5px;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #e5e5e5;
+      top: -73px;
+      right: -13px;
     }
   }
 
@@ -408,14 +437,16 @@
     }
   }
 
+
   .form__input {
-    width: 395px;
+    width: 418px;
     padding: 9px 22px;
     height: 43px;
     flex-grow: 1;
     border: 2px solid #e5e5e5;
 
     &--user-contacts {
+      padding-right: 60px;
       margin-bottom: 10px;
     }
   }
@@ -470,17 +501,22 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 86px;
   }
 
   .form__button {
     margin: 0;
-    margin-bottom: 36px;
+    margin-bottom: 0;
     width: 300px;
   }
 }
 
 
 @media (min-width: @desktop-width) {
+  .form__footer {
+    margin-bottom: 0;
+  }
+
   .form {
     width: 940px;
     padding-top: 0;
@@ -496,7 +532,7 @@
 
   .form__input {
     height: 42px;
-    width: 268px;
+    width: 292px;
   }
 
   .form__input-block-wrapper {
@@ -593,6 +629,24 @@
   .form__label {
     margin: 0;
     padding-right: 17px;
+
+    &--phone::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: -72px;
+      right: 2px;
+    }
+
+    &--mail::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: -72px;
+      right: 2px;
+    }
   }
 
   .form__fields-wrapper {
@@ -609,7 +663,7 @@
       flex-direction: row;
       padding: 35px 55px;
       padding-bottom: 11px;
-      padding-right: 123px;
+      padding-right: 59px;
       justify-content: space-between;
     }
 

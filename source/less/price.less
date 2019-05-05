@@ -30,15 +30,18 @@
   text-transform: uppercase;
 }
 
+
 .price__header-cell {
   box-sizing: border-box;
   width: 235px;
   font-size: 18px;
   background-color: #283645;
+  border-right: 2px solid #f2f2f2;
   color: #ffffff;
 
   &--first-cell {
     background-color: transparent;
+    border: none;
   }
 
   &--hit {
@@ -156,6 +159,24 @@
   .price__header-cell {
     width: 150px;
     font-size: 16px;
+
+    &--hit {
+      &::before {
+        content: "";
+        background-image: url("../img/bg-hit-tablet.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 75px;
+        height: 60px;
+        position: absolute;
+        left: 0;
+      }
+
+      &::after {
+        left: -2px;
+        top: -3px;
+      }
+    }
   }
 
   .price__field {
@@ -204,13 +225,10 @@
   .price__header-cell {
     width: 235px;
     font-size: 18px;
+    border-right: 2px solid #f2f2f2;
 
     &--first-cell {
       border: none;
-    }
-
-    &:nth-child(n+1) {
-      border-right: 2px solid #f2f2f2;
     }
   }
 

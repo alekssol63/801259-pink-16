@@ -265,6 +265,17 @@
   .share__filters-item {
     display: flex;
     padding-bottom: 33px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: #dddfe0;
+      width: 275px;
+      left: 16px;
+      bottom: 15px;
+    }
   }
 
   .share__form {
@@ -340,6 +351,10 @@
     margin: 0 auto;
   }
 
+  .share__intro-wrapper {
+    padding-bottom: 67px;
+  }
+
   .share__filters-wrapper {
     width: 410px;
     padding-bottom: 83px;
@@ -356,6 +371,12 @@
 
   .share__filters-item {
     padding-bottom: 18px;
+
+    &::after {
+      width: 410px;
+      left: 10px;
+      bottom: 11px;
+    }
   }
 
   .share__filter-button {
