@@ -14,6 +14,7 @@
   font-size: 14px;
   line-height: 2.1;
   text-transform: uppercase;
+  letter-spacing: 0.4px;
 }
 
 .form__footnote-hidden {
@@ -81,6 +82,8 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #d22856;
+  letter-spacing: 0.4px;
+  word-spacing: -1px;
 }
 
 .form__input-block {
@@ -90,11 +93,6 @@
 
   &--user-data {
     padding-bottom: 21px;
-  }
-
-  &--attainment {/*
-    background-color: #f2f2f2;
-    padding-bottom: 26px;*/
   }
 
   &--application {
@@ -114,7 +112,7 @@
 .form__label {
   position: relative;
   cursor: pointer;
-  color: #283136;
+  color: #d22856;
 
   display: block;
   margin-bottom: 6px;
@@ -122,27 +120,22 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
-  //color: #d22856;
   text-transform: uppercase;
+  letter-spacing: 0.2px;
 
   &--checkbox {
     font-size: 18px;
     color: #283645;
     text-transform: none;
     margin-left: 69px;
+    letter-spacing: 0.4px;
 
-    //outline: 0;
-
-    &:hover {
-      &::before {
-        border-color: #283645;
-      }
+    &:hover::before {
+      border-color: #283645;
     }
 
-    &:active {
-      &::before {
-        border-color: #d22856;
-      }
+    &:active::before {
+      border-color: #d22856;
     }
 
     &::before {
@@ -161,7 +154,6 @@
     font-size: 18px;
     color: #283645;
     margin-left: 69px;
-
     text-transform: none;
 
     &::before {
@@ -175,16 +167,12 @@
       border-radius: 50%;
     }
 
-    &:hover {
-      &::before {
-        border-color: #283645;
-      }
+    &:hover::before {
+      border-color: #283645;
     }
 
-    &:active {
-      &::before {
-        border-color: #d22856;
-      }
+    &:active::before {
+      border-color: #d22856;
     }
   }
 }
@@ -231,8 +219,6 @@
 
 .form__input {
   font-size: 18px;
-  //margin-bottom: 17px;
-
   line-height: 1.7;
   font-weight: 400;
   padding: 0;
@@ -241,6 +227,7 @@
   width: 255px;
   border: 2px solid #e5e5e5;
   outline: 0;
+  letter-spacing: 0.5px;
 
   &:hover {
     border-color: #283645;
@@ -259,13 +246,15 @@
   margin-top: 16px;
   width: 100%;
   height: 200px;
-  padding: 20px;
-  padding-top: 16px;
+  padding: 0 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   box-sizing: border-box;
   font-size: 18px;
   line-height: 1.7;
   color: #283645;
   border: 2px solid #e5e5e5;
+  letter-spacing: 0.4px;
   outline: 0;
 
   &:hover {
@@ -291,7 +280,6 @@
 }
 
 .form__button {
-  //margin: 0 auto;
   margin: 0 20px;
   margin-bottom: 36px;
 }
@@ -300,7 +288,7 @@
   .form {
     width: 620px;
     padding: 0 20px;
-    padding-top: 71px;
+    padding-top: 70px;
     padding-bottom: 4px;
     display: flex;
     flex-direction: column;
@@ -338,8 +326,6 @@
     margin: 0;
     padding: 0;
 
-
-
     &--user-data {
       margin-bottom: 6px;
       order: 1;
@@ -375,25 +361,21 @@
 
   .form__label {
     margin: 0;
-    margin-right: 17px;
+    margin-right: 20px;
 
     &--user-contacts {
       padding-left: 23px;
       position: relative;
     }
 
-    &--radio {
-      &::before {
-        left: -63px;
-        top: -4px;
-      }
+    &--radio::before {
+      left: -63px;
+      top: -4px;
     }
 
-    &--checkbox {
-      &::before {
-        left: -61px;
-        top: -4px;
-      }
+    &--checkbox::before {
+      left: -61px;
+      top: -4px;
     }
 
     &--phone::after {
@@ -406,7 +388,7 @@
       background-position: center;
       background-color: #e5e5e5;
       top: -73px;
-      right: -13px;
+      right: -16px;
     }
 
     &--mail::after {
@@ -419,7 +401,7 @@
       background-position: center;
       background-color: #e5e5e5;
       top: -73px;
-      right: -13px;
+      right: -16px;
     }
   }
 
@@ -515,6 +497,8 @@
 @media (min-width: @desktop-width) {
   .form__footer {
     margin-bottom: 0;
+    width: 100%;
+    flex-direction: row-reverse;
   }
 
   .form {
@@ -748,11 +732,6 @@
     margin-top: 0;
     padding: 17px;
     padding-top: 15px;
-  }
-
-  .form__footer {
-    width: 100%;
-    flex-direction: row-reverse;
   }
 
   .form__footnote-hidden {

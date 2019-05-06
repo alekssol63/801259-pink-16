@@ -1,5 +1,5 @@
 .gallery {
-  padding-top: 3px;
+  padding-top: 2px;
 }
 
 .gallery__picture {
@@ -35,12 +35,14 @@
   width: 253px;
   margin-bottom: 48px;
   line-height: 2.2;
+  letter-spacing: 0.4px;
 }
 
 .gallery__item {
   margin-bottom: 19px;
 
   &--panorama {
+    margin-bottom: 19px;
     width: 100%;
   }
 }
@@ -49,29 +51,36 @@
   position: relative;
   margin-bottom: 0;
 
-  &--panorama {
-    &::before {
-      position: absolute;
-      content: "Панорама дня";
-      text-transform: uppercase;
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 2;
-      color: white;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-top: 6px;
-      padding-bottom: 6px;
-      background-color: #d22856;
-      right: 21px;
-    }
+  &--panorama::before {
+    position: absolute;
+    content: "Панорама дня";
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 2;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: #d22856;
+    right: 21px;
   }
+}
+
+.gallery__time-mark {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 2;
+  text-transform: uppercase;
 }
 
 .gallery__text {
   margin: 0;
   margin-bottom: 10px;
   line-height: 1.72;
+  letter-spacing: 0.4px;
+  word-spacing: -1px;
 }
 
 .gallery__likes {
@@ -121,22 +130,12 @@
       margin-bottom: 52px;
     }
   }
-  /*
-  .gallery__image {
-    margin-bottom: 24px;
 
-    &--panorama {
-      margin-bottom: 24px;
-    }
-  }
-  */
 
   .gallery__picture-wrapper {
-    &--panorama {
-      &::before {
-        right: 20px;
-        top: 57px;
-      }
+    &--panorama::before {
+      right: 20px;
+      top: 57px;
     }
   }
 
@@ -216,11 +215,9 @@
   }
 
   .gallery__picture-wrapper {
-    &--panorama {
-      &::before {
-        right: 130px;
-        top: 54px;
-      }
+    &--panorama::before {
+      right: 130px;
+      top: 54px;
     }
   }
 
