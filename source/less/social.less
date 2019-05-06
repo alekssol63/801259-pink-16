@@ -13,12 +13,17 @@
 .social__list {
   width: 150px;
   display: flex;
-  margin: 0;//добавил фото
-  margin-bottom: 39px;//добавил фото
+  margin: 0;
+  //margin-bottom: 39px;
+  margin-bottom: 44px;
   justify-content: space-between;
   list-style: none;
   padding: 0;
   box-sizing: border-box;
+}
+
+.social__item {
+  margin-right: 7px;
 }
 
 .social__copyright {
@@ -44,7 +49,9 @@
   }
 
   &:active {
-    opacity: 0.3;
+    svg {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -60,11 +67,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 9px;
+  //padding: 0 9px;
+  padding: 0 8px;
+  padding-right: 13px;
 }
 
 .social__text {
   color: #283645;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -80,14 +90,13 @@
   .social__list {
     width: 180px;
     list-style: none;
-    //padding: 0 3px;
-    //padding-top: 4px;
-    margin: 0;//добавил фото
+    margin: 0;
     display: flex;
     justify-content: space-between;
   }
 
   .social__item {
+    margin-right: 0;
     border: 2px solid #e9ebec;
     width: 50px;
     height: 50px;
@@ -147,16 +156,55 @@
   }
 
   .social__text {
-    //padding-right: 16px;
     padding-left: 20px;
   }
 }
 
+.social__logo-pink-blue-desktop {
+  display: none;
+}
+
 @media (min-width: @desktop-width) {
+  .social {
+    align-items: stretch;
+  }
+
+  .social__logo {
+    padding-top: 7px;
+  }
+
+  .social__logo-pink-blue-mobile {
+    display: none;
+  }
+
+  .social__logo-pink-blue-desktop {
+    display: block;
+  }
+
   .social__text {
-    padding-right: 10px;
+    //padding-right: 10px;
+    padding-right: 7px;
     padding-left: 0;
     font-size: 18px;
     line-height: 1;
+  }
+
+  .social__list {
+    padding-top: 12px;
+    margin-right: 8px;
+    width: 190px;
+  }
+
+  .social__item {
+    margin-left: 10px;
+  }
+
+  .social__copyright {
+    width: 151px;
+    padding-top: 6px;
+  }
+
+  .social__icon-htmlacademy {
+    padding-top: 5px;
   }
 }

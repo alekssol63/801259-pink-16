@@ -51,7 +51,7 @@
           </div>
         </nav>
       </div>
-      <section class="header__content header__content--index">
+      <section class="header__content header__content">
         <div class="header__content-wrapper header__content-wrapper--index">
           <div class="header__application">
             <h2 class="visually-hidden">Приложение</h2>
@@ -79,22 +79,28 @@
           <p class="information__intro-phrase">Устали от серости мегаполиса?</p>
           <p class="information__intro-phrase information__intro-phrase--short">Нам есть, что вам  предложить!</p>
         </div>
-        <div class="information__opportunities">
-          <div class="information__opportunities-content-wrapper">
+        <div class="information__opportunities-wrapper">
+          <div class="information__opportunities">
             <ul class="information__list">
               <li class="information__item">
                 <h3 class="information__item-header">Поднимает настроение</h3>
-                <p class="information__item-text">Приложение позволит вам победить осеннюю хандру и депресссию буквально в несколько кликов!</p>
+                <p class="information__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
               <li class="information__item">
                 <h3 class="information__item-header">Меняет мир вокруг</h3>
-                <p class="information__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                <p class="information__item-text">Сделайте снимок и украсьте его смайликом <span class="information__item-text-string">или текстовой подписью, чтобы</span> усилить эффект</p>
               </li>
               <li class="information__item">
                 <h3 class="information__item-header">Заводит новых друзей</h3>
                 <p class="information__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
+
+          </div>
+
+        </div>
+
+          <div class="information__effect-wrapper">
             <div class="information__effect">
               <div class="information__diagram">
                 <svg class="information__clock" width="240" height="280">
@@ -106,8 +112,8 @@
                 <h3 class="information__effect-header">Эффект
                   на 24 часа!
                 </h3>
-                <p class="information__effect-text">Британские ученые провели исследования
-                  и доказали, что положительный эффект
+                <p class="information__effect-text"><span class="information__effect-text information__effect-block">Британские ученые провели исследования
+                  и доказали,</span> что положительный эффект
                   от использования приложения длится
                   целые сутки!
                 </p>
@@ -115,7 +121,7 @@
               </div>
             </div>
           </div>
-        </div>
+
       </section>
       <section class="reviews slider">
         <h2 class="visually-hidden">Отзывы</h2>
@@ -124,9 +130,7 @@
             <article class="reviews__item  slider__item">
               <h3 class="reviews__author">Николай Петров</h3>
                 <p class="reviews__user-description">25 лет, водитель трамвая</p>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                  А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-                </p>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому<span class="reviews__text-paragraph"> взглянуть на привычные серые вещи! А еще я познакомился со своей</span> будущей женой в комментариях к выложенной фотографии!»</p>
             </article>
           </div>
           <button class="reviews__button reviews__button--prev slider__button" type="button" aria-label="Next">
@@ -156,7 +160,8 @@
                 <b class="price__caption">База</b>
                 <b class="price__bold">1,99 USD</b>
               </th>
-              <th class="price__header-cell">
+              <th class="price__header-cell price__header-cell--hit">
+
                 <b class="price__caption">Стандарт</b>
                 <b class="price__bold">3,99 USD</b>
               </th>
@@ -241,7 +246,7 @@
           </div>
           <div class="footer__contacts-item">
             <b class="footer__caption">Пишите:</b>
-            <p class="footer__text">mail@htmlacademy.ru</p>
+            <a href="#" class="footer__text footer__text--mail-link">mail@htmlacademy.ru</a>
           </div>
           <div class="footer__contacts-item">
             <b class="footer__caption">Приезжайте в гости:</b>
@@ -250,13 +255,16 @@
         </div>
       </div>
       <div class="footer__map-wrapper">
-        <iframe  class="footer__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A8a8feb3e3ea85b4853c66eb741194554513123114edbbd2145a8233ef4e3c07b&amp;source=constructor" height="195"></iframe>
+        <iframe class="footer__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad44636275886ac83a3206312c7eb3194351b6661e45c87118711150c28587015&amp;source=constructor" height="195"></iframe>
       </div>
       <div class="footer__social-block footer__social-block--index social">
         <div class="social__logo">
           <a class="social__logo-link">
-            <svg class="social__logo-pink-blue-mobile" width="146" height="40">
+            <svg class="social__logo-pink-blue-mobile" width="146" height="40" fill="#d22856">
               <use xlink:href="img/sprite.svg#icon-logo-pink-blue-mobile"></use>
+            </svg>
+            <svg class="social__logo-pink-blue-desktop" width="146" height="40" fill="#d22856">
+              <use xlink:href="img/sprite.svg#icon-logo-pink-blue-desktop"></use>
             </svg>
           </a>
         </div>

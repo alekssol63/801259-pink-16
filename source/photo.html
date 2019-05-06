@@ -33,15 +33,15 @@
           </div>
           <div class="main-nav__navigation-wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item"><a class="site-list__link site-list__link--active" href="index.html">Главная</a></li>
-              <li class="site-list__item"><a class="site-list__link" href="#">Фотографии</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+              <li class="site-list__item"><a class="site-list__link site-list__link--active" href="#">Фотографии</a></li>
               <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
               <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
             </ul>
           </div>
         </nav>
       </div>
-      <section class="header__content">
+      <section class="header__content header__content--photo">
         <div class="header__content-wrapper">
           <h2 class="header__content-title">Фотографии пользователей</h2>
         </div>
@@ -59,6 +59,10 @@
         <div class="gallery__item gallery__item--panorama">
           <div class="gallery__picture-wrapper gallery__picture-wrapper--panorama">
             <picture class="gallery__picture">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
               <img class="gallery__image gallery__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="user-panorama">
@@ -69,7 +73,7 @@
               <b class="gallery__username">Анна</b>
               <span class="gallery__time-mark">(5 минут назад)</span>
             </p>
-            <p class="gallery__text">
+            <p class="gallery__text gallery__text--panorama">
               Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
             <p class="gallery__likes gallery__likes--panorama">Нравится:<span class="gallery__likes-count">215</span></p>
@@ -80,6 +84,10 @@
             <!--<img class="gallery__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="user-photowork">-->
             <div class="gallery__picture-wrapper">
               <picture class="gallery__picture">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="user-photowork">
@@ -100,6 +108,10 @@
             <!--<img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="user-photowork">-->
             <div class="gallery__picture-wrapper">
               <picture class="gallery__picture">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="user-photowork">
@@ -120,6 +132,10 @@
             <!--<img class="gallery__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="user-photowork">-->
             <div class="gallery__picture-wrapper">
               <picture class="gallery__picture">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, photo-window-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="user-photowork">
@@ -140,6 +156,10 @@
             <!--<img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="user-photowork">-->
             <div class="gallery__picture-wrapper">
               <picture class="gallery__picture">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="user-photowork">
@@ -160,6 +180,10 @@
             <!--<img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="user-photowork">-->
             <div class="gallery__picture-wrapper">
               <picture class="gallery__picture">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="user-photowork">
@@ -180,6 +204,10 @@
             <!--<img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="user-photowork">-->
             <div class="gallery__picture-wrapper">
               <picture class="gallery__picture">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="user-photowork">
@@ -210,6 +238,10 @@
           <div class="share__publication">
             <div class="share__picture-wrapper">
               <picture class="share__picture">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
                 <img class="share__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="user-photowork">
@@ -261,8 +293,8 @@
                 <label for="effect"></label>
               </div>
               <div class="share__buttons-wrapper">
-                <button class="share__button button button--active" type="button">Запостить</button>
-                <button class="share__button button button--disable" type="button">Отмена</button>
+                <input class="share__button button button--post" type="submit" value="Запостить">
+                <button class="share__button button button--cancel" type="button">Отмена</button>
               </div>
             </form>
           </div>
@@ -273,8 +305,11 @@
       <div class="footer__social-block social">
         <div class="social__logo social__logo">
           <a class="social__logo-link">
-            <svg class="social__logo-pink-blue-mobile" width="146" height="40">
+            <svg class="social__logo-pink-blue-mobile" width="146" height="40" fill="#d22856">
               <use xlink:href="img/sprite.svg#icon-logo-pink-blue-mobile"></use>
+            </svg>
+            <svg class="social__logo-pink-blue-desktop" width="146" height="40" fill="#d22856">
+              <use xlink:href="img/sprite.svg#icon-logo-pink-blue-desktop"></use>
             </svg>
           </a>
         </div>
