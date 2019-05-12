@@ -1,0 +1,252 @@
+.slider__content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.slider__item {
+  margin-bottom: 36px;
+  display: none;
+}
+
+.slider__controls {
+  width: 140px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-left: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slider__toggle {
+  font-size: 0;
+  margin-right: 5px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+
+
+  &:nth-child(1)::before {
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+    border: 3px solid #283645;
+    border-radius: 50%;
+    opacity: 0.3;
+    left: 42px;
+  }
+
+  &:nth-child(2)::before {
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+    border: 3px solid #283645;
+    border-radius: 50%;
+    opacity: 0.3;
+    left: 67px;
+  }
+
+  &:nth-child(3)::before {
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+    border: 3px solid #283645;
+    border-radius: 50%;
+    opacity: 0.3;
+    right: 42px;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+.slider__review-first:checked ~ .slider__controls .slider__toggle--first {
+  &::before {
+    border: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 3px solid #283645;
+    border-radius: 50%;
+    opacity: 1;
+    top: -3px;
+    left: 39px;
+  }
+}
+
+.slider__review-second:checked ~ .slider__controls .slider__toggle--second {
+  &::before {
+    border: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 3px solid #283645;
+    border-radius: 50%;
+    opacity: 1;
+    top: -3px;
+    left: 64px;
+  }
+}
+
+.slider__review-third:checked ~ .slider__controls .slider__toggle--third {
+  &::before {
+    border: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 3px solid #283645;
+    border-radius: 50%;
+    opacity: 1;
+    top: -3px;
+    left: 88px;
+  }
+}
+
+.slider__review-first:checked ~ .reviews__list .slider__item:nth-child(1) {
+  display: flex;
+}
+
+.slider__review-second:checked ~ .reviews__list .slider__item:nth-child(2) {
+  display: flex;
+}
+
+.slider__review-third:checked ~ .reviews__list .slider__item:nth-child(3) {
+  display: flex;
+}
+
+.slider__price-first:checked ~ .slider__controls .slider__toggle--first {
+  &::before {
+    border: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 3px solid #283645;
+    border-radius: 50%;
+    opacity: 1;
+    top: -3px;
+    left: 39px;
+  }
+}
+
+.slider__price-second:checked ~ .slider__controls .slider__toggle--second {
+  &::before {
+    border: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 3px solid #283645;
+    border-radius: 50%;
+    opacity: 1;
+    top: -3px;
+    left: 64px;
+  }
+}
+
+.slider__price-third:checked ~ .slider__controls .slider__toggle--third {
+  &::before {
+    border: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 3px solid #283645;
+    border-radius: 50%;
+    opacity: 1;
+    top: -3px;
+    left: 88px;
+  }
+}
+
+.slider__price-first:checked ~ .price__table {
+  left: -100%;
+
+  .price__option {
+    left: 25%;
+  }
+}
+
+.slider__price-second:checked ~ .price__table {
+  left: -200%;
+}
+
+.slider__price-third:checked ~ .price__table {
+  left: -300%;
+
+  .price__option {
+    left: 75%;
+  }
+}
+
+.slider__button {
+  width: 60px;
+  height: 100px;
+  background-color: transparent;
+  border: none;
+}
+
+.slider__button-icon {
+  fill: #7e868f;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slider__controls {
+    &--price {
+      display: none;
+    }
+  }
+
+  .slider__item {
+    margin-bottom: 39px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__content {
+    flex-direction: row;
+  }
+
+  .slider__item {
+    margin-bottom: 36px;
+  }
+}

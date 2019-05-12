@@ -1,8 +1,10 @@
 .price {
   padding: 0 20px;
-  padding-top: 88px;
+  padding-top: 90px;
   background-color: #f2f2f2;
-  padding-bottom: 54px;
+  padding-bottom: 37px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .price__toggles {
@@ -12,7 +14,7 @@
 .price__table {
   width: 400%;
   border-collapse: collapse;
-
+  margin-bottom: 38px;
   position: relative;
   left: -200%;
 }
@@ -102,20 +104,22 @@
   position: absolute;
   left: 50%;
   padding-left: 23px;
-  padding-top: 17px;
+  padding-top: 15px;
   padding-bottom: 13px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 @media (min-width: @tablet-width) {
   .price {
     background-color: #f2f2f2;
-    padding-top: 85px;
-    padding-bottom: 23px;
-    margin-bottom: 50px;
+    padding-top: 90px;
+    padding-bottom: 28px;
+    margin-bottom: 47px;
+    display: block;
   }
 
   .price__table {
@@ -145,7 +149,7 @@
     background-color: white;
     font-size: 14px;
     padding-left: 16px;
-    padding-top: 7px;
+    padding-top: 6px;
     padding-bottom: 9px;
     text-transform: none;
     border: 2px solid #e5e5e5;
@@ -178,7 +182,7 @@
     width: 150px;
     font-size: 16px;
     text-align: center;
-    padding-top: 0;
+    padding-top: 5px;
     padding-bottom: 0;
     padding-left: 20px;
     padding-right: 20px;
@@ -196,6 +200,7 @@
     padding-top: 150px;
     padding-bottom: 94px;
     margin-bottom: 0;
+    display: block;
   }
 
   .price__caption {
@@ -268,7 +273,6 @@
 
   .price__table {
     width: 940px;
-    padding: 0 10px;
     margin: 0 auto;
     position: static;
   }

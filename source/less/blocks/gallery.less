@@ -44,28 +44,28 @@
   &--panorama {
     margin-bottom: 19px;
     width: 100%;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "Панорама дня";
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 2;
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      background-color: #d22856;
+      right: 21px;
+    }
   }
 }
 
 .gallery__picture-wrapper {
-  position: relative;
   margin-bottom: 0;
-
-  &--panorama::before {
-    position: absolute;
-    content: "Панорама дня";
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 2;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    background-color: #d22856;
-    right: 21px;
-  }
 }
 
 .gallery__time-mark {
@@ -91,6 +91,7 @@
   line-height: 2;
   padding-left: 32px;
   color: #d22856;
+  letter-spacing: 0.4px;
 
   &::before {
     content: "";
@@ -105,7 +106,8 @@
 }
 
 .gallery__likes-count {
-  padding-left: 3px;
+  padding-left: 2px;
+  letter-spacing: 0.4px;
 }
 
 @media (min-width: @tablet-width) {
@@ -128,14 +130,11 @@
     &--panorama {
       width: 100%;
       margin-bottom: 52px;
-    }
-  }
 
-
-  .gallery__picture-wrapper {
-    &--panorama::before {
-      right: 20px;
-      top: 57px;
+      &::before {
+        right: 20px;
+        top: 56px;
+      }
     }
   }
 
@@ -214,13 +213,6 @@
     margin-bottom: 88px;
   }
 
-  .gallery__picture-wrapper {
-    &--panorama::before {
-      right: 130px;
-      top: 54px;
-    }
-  }
-
   .gallery__description {
     &--panorama {
       width: 940px;
@@ -245,6 +237,11 @@
       max-width: 1200px;
       margin: 0 auto;
       margin-bottom: 50px;
+
+      &::before {
+        right: 130px;
+        top: 54px;
+      }
     }
   }
 }
