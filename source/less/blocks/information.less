@@ -5,13 +5,14 @@
 
 .information__diagram {
   position: relative;
+  display: table;
 }
 
 .information__diagram-digit {
   bottom: 42px;
   left: 63px;
   position: absolute;
-  color: pink;
+  color: #d22856;
   font-size: 96px;
   font-weight: 700;
 }
@@ -100,6 +101,8 @@
   .information__effect-link {
     letter-spacing: 0.3px;
     color: #d22856;
+    display: block;
+    padding-top: 6px;
   }
 
   .information__intro {
@@ -124,7 +127,7 @@
 
   .information__opportunities-wrapper {
     padding: 0 20px;
-    padding-top: 71px;
+    padding-top: 69px;
     padding-bottom: 11px;
     display: flex;
     flex-wrap: wrap;
@@ -163,11 +166,14 @@
     margin-bottom: 0;
     width: 310px;
     text-align: left;
-    padding-right: 2px;
   }
 
   .information__item {
-    margin-bottom: 32px;
+    margin-bottom: 33px;
+  }
+
+  .information__item-text {
+    white-space: pre-line;
   }
 
   .information__effect-wrapper {
@@ -183,8 +189,8 @@
   }
 
   .information__effect-declaration {
-    width: 310px;
-    padding-top: 43px;
+    width: 309px;
+    padding-top: 40px;
     padding-right: 2px;
     text-align: left;
   }
@@ -192,38 +198,33 @@
   .information__effect-header {
     font-size: 30px;
     margin: 0;
-    white-space: pre-line;
     padding: 0;
-    margin-bottom: 9px;
+    margin-bottom: 6px;
     line-height: 1.2;
     font-weight: 700;
     text-align: left;
+    white-space: pre-line;
   }
 
   .information__effect-text {
     margin: 0;
     line-height: 24px;
-    white-space: pre-line;
-    margin-bottom: 8px;
+    display: inline;
     letter-spacing: 0.4px;
     word-spacing: -0.8px;
+
+    &:nth-child(3) {
+      padding-right: 20px;
+    }
   }
 
   .reviews__text {
     font-size: 18px;
     line-height: 24px;
   }
-
-  .information__item-text-string {
-    display: block;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .information__item-text-string {
-    display: inline;
-  }
-
   .information {
     margin-bottom: 186px;
   }
@@ -246,6 +247,7 @@
 
   .information__opportunities-wrapper {
     padding: 0;
+    display: block;
 
     &::before {
       left: 0;
@@ -342,7 +344,7 @@
   }
 
   .information__item-header {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
     font-size: 30px;
     line-height: 1;
   }
@@ -350,6 +352,7 @@
   .information__item-text {
     font-size: 18px;
     line-height: 1.67;
+    white-space: normal;
   }
 
   .information__effect-wrapper {
@@ -366,6 +369,12 @@
     padding-bottom: 55px;
   }
 
+  .information__effect-link {
+    padding-top: 28px;
+    font-size: 18px;
+    color: #d22856;
+  }
+
   .information__clock {
     width: 300px;
     height: 355px;
@@ -375,7 +384,7 @@
     bottom: 48px;
     left: 78px;
     position: absolute;
-    color: pink;
+    color: #d22856;
     font-size: 122px;
     font-weight: 700;
   }
@@ -388,24 +397,21 @@
   }
 
   .information__effect-header {
-    white-space: normal;
     margin-bottom: 20px;
+    white-space: normal;
   }
 
   .information__effect-text {
     font-size: 18px;
     line-height: 1.67;
-    white-space: normal;
-    margin-bottom: 29px;
-  }
+    letter-spacing: 0.5px;
 
-  .information__effect-block {
-    display: block;
-    margin: 0;
-  }
+    &:nth-child(2) {
+      padding-right: 53px;
+    }
 
-  .information__effect-link {
-    font-size: 18px;
-    color: #d22856;
+    &:nth-child(3) {
+      padding-right: 0;
+    }
   }
 }
