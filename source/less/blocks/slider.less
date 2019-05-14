@@ -249,11 +249,15 @@
     margin-bottom: 36px;
   }
 
-  .slider__price-second {
-    checked: true;
+  .slider__price-first:checked ~ .price__table {
+    left: 0;
   }
 
   .slider__price-second:checked ~ .price__table {
+    left: 0;
+  }
+
+  .slider__price-third:checked ~ .price__table {
     left: 0;
   }
 }
