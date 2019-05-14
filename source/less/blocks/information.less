@@ -49,7 +49,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 30px;
+    height: 100%;
   }
 
   &::after {
@@ -132,16 +132,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-
-    &::before {
-      z-index: 1;
-      background-image: url("../img/bg-triangle-white.svg");
-      background-size: contain;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 46px;
-    }
 
     &::after {
       z-index: 2;
@@ -247,13 +237,6 @@
   .information__opportunities-wrapper {
     padding: 0;
     display: block;
-
-    &::before {
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 105px;
-    }
 
     &::after {
       content: none;

@@ -2,11 +2,15 @@
   width: 100%;
   padding: 0;
   margin: 0;
+  border-bottom: 1px solid #010101;
 }
 
 .site-list__item {
   text-decoration: none;
   list-style: none;
+  box-sizing: border-box;
+  height: 64px;
+  border-top: 1px solid #000000;
 }
 
 .site-list__link {
@@ -19,10 +23,7 @@
   line-height: 1.77;
   font-weight: 700;
   text-transform: uppercase;
-
-
   border-top: 1px solid #485461;
-  border-bottom: 1px solid #000001;
 }
 
 @media (min-width: @desktop-width) {
@@ -31,6 +32,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: none;
   }
 
   .site-list__item {

@@ -11,12 +11,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  //align-items: center;
   position: relative;
 }
 
 .header__logo-link {
   color: white;
+  margin-top: 20px;
 
   svg {
     fill: currentColor;
@@ -102,7 +103,6 @@
   padding: 0 20px;
   display: flex;
   justify-content: center;
-  //padding-top: 91px;
 
   &--index {
     display: block;
@@ -123,7 +123,7 @@
 
   &--form {
     padding-bottom: 50px;
-    padding-top: 91px;
+    padding-top: 94px;
   }
 }
 
@@ -173,9 +173,12 @@
     width: 660px;
     padding: 0 20px;
     padding-top: 25px;
-    align-items: normal;
+    //align-items: baseline;
   }
 
+  .header__logo-link {
+    margin-top: 0;
+  }
 
   .header__logo-pink-white-mobile {
     display: none;
@@ -270,8 +273,6 @@
 
 @media (min-width: @desktop-width) {
   .header {
-    //width: 1200px;
-    //margin-bottom: 76px;
     width: 100%;
 
     &--form {

@@ -27,7 +27,6 @@
   width: 20px;
   height: 20px;
 
-
   &:nth-child(1)::before {
     content: "";
     position: absolute;
@@ -248,5 +247,13 @@
 
   .slider__item {
     margin-bottom: 36px;
+  }
+
+  .slider__price-second {
+    checked: true;
+  }
+
+  .slider__price-second:checked ~ .price__table {
+    left: 0;
   }
 }
