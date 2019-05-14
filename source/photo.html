@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <script defer src="js/svgxuse.min.js"></script>
     <script src="js/picturefill.min.js"></script>
@@ -135,7 +132,7 @@
               <picture class="gallery__picture">
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, photo-window-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="user-photowork">
@@ -243,7 +240,7 @@
               <div class="share__filters-wrapper">
                 <ul class="share__filters">
                   <li class="share__filters-item">
-                    <button class="share__filter-button share__filter-button--crop" type="button" name="button">
+                    <button class="share__filter-button share__filter-button--crop share__filter-button--active" type="button" name="button">
                       <svg class="share__icon share__icon--crop" width="50" height="50">
                         <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
                       </svg>
