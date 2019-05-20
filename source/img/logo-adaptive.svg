@@ -10,16 +10,16 @@
       display: none;
     }
     .logo-header__sign {
-      display: initial;
+      display: inline-block;
     }
     @media (min-width: 660px) {
       .logo-header__glasses {
-        display: initial;
+        display: inline-block;
       }
     }
     @media (min-width: 960px) {
       .logo-header__star, .logo-header__glasses-crop, .logo-header__stars {
-        display: initial;
+        display: inline-block;
       }
       .logo-header__glasses {
         display: none;
