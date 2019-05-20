@@ -35,8 +35,8 @@
   z-index: 0;
   text-align: center;
   padding: 0;
-  padding-top: 73px;
-  padding-bottom: 280px;
+  padding-top: 75px;
+  padding-bottom: 277px;
   background-color: #f2f2f2;
 
   &::before {
@@ -55,12 +55,18 @@
   &::after {
     content: "";
     position: absolute;
+    left: 0;
+    width: 100%;
+    height: 277px;
+
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center top;
-    left: 0;
-    width: 100%;
-    height: 280px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+      background-size: 49%;
+    }
   }
 }
 
@@ -73,7 +79,7 @@
 }
 
 .information__item {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .information__item-header {
@@ -100,10 +106,10 @@
 @media (min-width: @tablet-width) {
   .information__effect-link {
     letter-spacing: 0.3px;
-    line-height: 1.71;
+    line-height: 1.72;
     color: #d22856;
     display: block;
-    padding-top: 9px;
+    padding-top: 11px;
   }
 
   .information__intro {
@@ -128,20 +134,26 @@
 
   .information__opportunities-wrapper {
     padding: 0 20px;
-    padding-top: 69px;
-    padding-bottom: 11px;
+    padding-top: 71px;
+    padding-bottom: 8px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 
     &::after {
       z-index: 2;
+      top: 0;
+      width: 100%;
+      height: 481px;
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
       background-repeat: no-repeat;
       background-position: 20px top;
-      top: 0;
-      width: 100%;
-      height: 480px;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/iphone-screen-3-tablet@2x.png");
+        background-size: 41%;
+        background-position: 20px -3px;
+      }
     }
   }
 
@@ -160,7 +172,7 @@
   }
 
   .information__item {
-    margin-bottom: 33px;
+    margin-bottom: 34px;
   }
 
   .information__item-text {
@@ -175,7 +187,7 @@
   .information__effect {
     display: flex;
     justify-content: space-between;
-    padding-top: 54px;
+    padding-top: 55px;
     padding-bottom: 90px;
   }
 
@@ -190,7 +202,7 @@
     font-size: 30px;
     margin: 0;
     padding: 0;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
     line-height: 1.2;
     font-weight: 700;
     text-align: left;
@@ -333,7 +345,7 @@
 
   .information__item-text {
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 1.667;
     white-space: normal;
   }
 
@@ -347,15 +359,16 @@
     width: 940px;
     padding: 0 10px;
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 23px;
     padding-bottom: 55px;
   }
 
   .information__effect-link {
     padding-top: 28px;
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 1.667;
     color: #d22856;
+    letter-spacing: 0.4px;
   }
 
   .information__clock {
@@ -380,13 +393,14 @@
   }
 
   .information__effect-header {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     white-space: normal;
+    line-height: 1;
   }
 
   .information__effect-text {
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 1.667;
     letter-spacing: 0.5px;
   }
 }
