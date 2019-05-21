@@ -207,17 +207,19 @@
   height: 100px;
   background-color: transparent;
   border: none;
+  color: #bec2c7;
 
-  fill: #7e868f;
-  opacity: 0.6;
+  svg {
+    fill: currentColor;
+  }
 
   &:hover,
   &:focus {
-    opacity: 1;
+    color: #7e868f;
   }
 
   &:active {
-    opacity: 0.2;
+    color: #e9ebec;
   }
 
   &--next {
