@@ -38,6 +38,7 @@
   .site-list__item {
     padding-left: 10px;
     padding-right: 2px;
+    border-top: none;
   }
 
   .site-list__link {
@@ -50,7 +51,8 @@
     text-transform: none;
     border: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: #d22856;
     }
 
@@ -63,7 +65,8 @@
       padding-bottom: 5px;
       outline: 0;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: #ffffff;
       }
 
